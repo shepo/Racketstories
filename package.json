@@ -1,0 +1,12 @@
+{
+  "name": "racket-stories",
+  "private": true,
+  "description": "Racket Stories: a hand-rolled, Blogspot-style static blog about club racket sports.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && python3 -m http.server 8080 --directory dist",
+    "images": "scripts/optimise-images.sh"
+  },
+  "engines": { "node": ">=18" }
+}
