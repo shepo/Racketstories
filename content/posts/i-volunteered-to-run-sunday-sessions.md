@@ -1,66 +1,39 @@
 ---
-title: I volunteered to run Sunday sessions. Here's what nobody told me.
+title: "How hard can it be?" (Sunday sessions, a cautionary tale)
 date: 2026-07-07T18:40
 author: graham
 labels: Squash, Organising, Club life, Tennis
-description: A club volunteer on what running racket sports sessions really involves, the hidden cost of doing it with spreadsheets and group chats, and what to look for in a session management app for tennis, padel, pickleball or squash.
+description: A retired club volunteer took over Sunday morning racket sessions and found out how much admin the job really is, and what to look for in an app that takes it off you.
 image: night-courts
 imageAlt: Aerial view of four floodlit tennis courts at night
 ---
 
-At the March committee meeting, under Any Other Business, our Sunday morning organiser announced she was moving to Norfolk. There was a long silence. Somebody coughed. Somebody else looked very hard at the biscuits. And I heard my own voice say, "Well, how hard can it be?"
+March committee meeting. Any Other Business. Sue announces she is moving to Norfolk and somebody will need to take on Sunday mornings.
 
-Four months on, I can tell you exactly how hard it can be.
+Long silence. Somebody coughs. The treasurer studies the biscuits with great intensity.
 
-![Aerial view of floodlit courts at night](night-courts "The courts at 9pm, when I am usually still sorting out next Sunday.")
+And I hear my own voice say: "Well. How hard can it be?"
+
+![Aerial view of floodlit courts at night](night-courts "The courts at 9pm. I am usually still sorting out Sunday at this point.")
 
 <!--more-->
 
-## The job nobody describes
+I would like to formally withdraw that remark.
 
-"Running sessions" sounds terribly simple. Turn up, unlock the cupboard, hand out balls. In practice it's a long list of small jobs that add up to a second career:
+I had assumed running Sunday mornings meant unlocking the ball cupboard and saying good morning. What it actually means is: telling everyone it's on, finding out who's coming, finding out who's ACTUALLY coming as opposed to who said they were, fitting them onto the courts, making up the pairings, keeping a reserve list, ringing round when someone drops out at ten past eight, and writing the results down somewhere people can see them. Every week. Including the weeks I'm not well, and the weeks I'm at a christening.
 
-- Letting people know a session is on
-- Collecting sign-ups and keeping track of who has actually confirmed
-- Keeping numbers to what the courts can hold
-- Drawing up pairings or court assignments
-- Running a reserve list when it fills up
-- Filling gaps when someone cancels at short notice
-- Recording results somewhere people can see them
+The christening. Let me tell you about the christening. My granddaughter's, in May. Sunday morning. I had handed Sundays to nobody, because there was nobody, and the whole thing lived in a spreadsheet only I understood and a WhatsApp group only I read. It very nearly didn't happen. I was in a pew texting reserves.
 
-Done by hand, this lived across a WhatsApp thread, a spreadsheet and my memory, which at sixty-eight is not what it was. It works until it doesn't. One late cancellation and I'm rebalancing courts on my phone in the car park, wearing reading glasses in the rain.
+That is the problem in one sentence: it was all in my head. One person. If I'm not there, it doesn't happen. That is no way to run anything.
 
-## The hidden cost
+The club has a booking system, naturally. It cost a great deal of money and it can take my £12 for the floodlights in about four seconds. It cannot tell me who wants a game. Not its job, apparently. Nobody's job, apparently, except mine.
 
-A spreadsheet does not chase replies. A group chat does not move a reserve up when someone drops out. Every one of those jobs falls on one person, and that person is usually the one who'd quite like to play as well.
+So after the christening I spent several evenings looking at apps, and I will save the next poor volunteer the trouble. Most of them are booking and payments for the people who run the business. You want one that's for the people running the play. Something that takes sign-ups and keeps a reserve list ON ITS OWN and moves the next person up when someone drops out, without me. Something that does the pairings so they're fair. Something that works for squash and tennis and the rest (the table tennis section will want in, trust me). And above all something people can join WITHOUT a password, because half my Sunday regulars would sooner give up squash than create a password.
 
-It isn't only the time. It's being the single point of failure. When I went to my granddaughter's christening in May, Sunday session nearly didn't happen, because it was all in my head and my spreadsheet, and nobody else could read either. That's a fragile way to keep a community going.
+Bev pointed me at the one Jake built for our club, Rallio. It does all of that. It took me fifteen minutes to set up, though I was also making toast.
 
-## What I looked for (and what I'd tell the next mug)
+The first Sunday a reserve moved up on its own I was, as it happens, in church again. I have never been so moved in church.
 
-After the christening incident I spent a few evenings looking at apps. Most of what's out there that touches racket sports is court booking and payment systems: built for the people running the *business*, not the people running the *play*. Our club already has one of those. It can take my £12 for floodlights in four seconds. It cannot tell me who wants a game.
+So. How hard can it be? Very. Unless you stop it all living in one person's head.
 
-If you're in my shoes, here's my checklist. Look for something that:
-
-- **Is built for players and organisers**, not the back office
-- **Handles sign-ups, numbers and reserves by itself**, including moving a reserve up when a place opens
-- **Balances the pairings** so the games are fair, not lopsided
-- **Works across sports**, so the same thing covers tennis, padel, pickleball, squash, badminton and table tennis (our club has the lot, and the table tennis section are very vocal)
-- **Works on the web and on phones**, because people check on the move
-- **Is quick for players to join**, with no long form between them and the session. Half my Sunday group would sooner give up squash than create a password.
-
-If something ticks those boxes, the admin starts looking after itself.
-
-## What I ended up using
-
-Bev, who runs the Thursday tennis and writes on here, pointed me at Rallio, which a member of our club built. It does open games, mixers, ladders and competitions. For Sundays it's the mixer that does the heavy lifting.
-
-I post a session and it handles sign-ups, balanced courts, reserves and reshuffles. When it's full, the reserve list takes over. When someone cancels, the next reserve is moved up and told automatically. I'm no longer the bottleneck, which is a phrase my son taught me and I've been using at every opportunity.
-
-Setting up took about a minute (it took me fifteen, but I was also making toast). You make a group, pick your sport, and invite people with a link or add them by name. They see their courts and partners on their phones and get a nudge when a session fills or a place opens.
-
-## In summary, for the minutes
-
-If you're running sessions off a spreadsheet and a group chat, a proper session management app pays for itself the first Sunday a reserve moves up without you touching it. Mine did it during the sermon at the christening. I've never been so moved in church.
-
-P.S. Norfolk Sue, if you're reading this: we're fine. Absolutely fine. Do visit.
+P.S. Sue, if you're reading this in Norfolk: we're fine. Absolutely fine. Do visit.

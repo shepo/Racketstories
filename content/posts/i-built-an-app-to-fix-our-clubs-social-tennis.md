@@ -1,71 +1,37 @@
 ---
-title: I built an app to fix our club's social tennis. Then it became something else.
+title: It was only meant to fix Thursdays
 date: 2026-06-25T19:12
 author: jake
 labels: Tennis, Club life, Mixers
-description: How a WhatsApp message, a secret Excel spreadsheet and a surprisingly hard pairing problem at a Surrey tennis club turned a weekend project into Rallio. A club member's story.
+description: How a WhatsApp message and a secret spreadsheet at a Surrey tennis club turned into a weekend pairing tool, and then into Rallio. A club member's story.
 image: noticeboard
 imageAlt: A club noticeboard covered in overlapping box league sheets, tournament draws and notices
 ---
 
-Bev has been nagging me to write this for about a month, so here it is. It started, as most things at our club do, with a WhatsApp message.
+Bev has asked me about six times to write this so here it is. Short version: I tried to fix one evening of tennis and it got out of hand.
 
 > "Anyone fancy social tennis Thursday 7pm? Courts 3 and 4. First 8 to reply."
 
-I'm a member at a big multi-sport club in Surrey. Tennis, squash, padel, badminton, table tennis, a decent bar. And a noticeboard that looks like a crime scene.
+That message, or one like it, went out every week at our club for years. And then the noticeboard. Look at the noticeboard.
 
-![A club noticeboard covered in box league sheets and notices](noticeboard "The noticeboard. Somewhere in there, in eight-point font, is an email address for enquiries.")
+![A club noticeboard covered in box league sheets and notices](noticeboard "Our noticeboard. Somewhere in there is an email address for enquiries. Good luck.")
 
 <!--more-->
 
-I love the place. But actually *using* it (knowing what was on, who was playing, whether there was space) was, to put it kindly, a mess.
+After Covid our socials went mad. Five a week at one point, six courts, twenty-odd people a night, total beginners and people who'd been playing together since the nineties all in the same session. And one person running the lot, out of pure love for the club, on a secret Excel spreadsheet with some bits of script bolted on that broke if you looked at it.
 
-The booking system ran on software old enough to have Y2K worries. Courts, lights, payments, bar tabs and membership fees were all wired into one creaking machine. Fine. Every club has one of those. But nobody had built anything for the *players*.
+They'd post the pairings as a screenshot. Half the group wouldn't see it. Same pair together three rounds running. A strong player stuck with two complete beginners all night. Nobody's fault. Doing fair doubles rotations across six courts in your head is genuinely hard, I don't think people realise how hard. Someone tried ChatGPT and it put the same bloke on two courts at once.
 
-## Fourteen people, six courts, no idea
+I build software for a living so I thought, I'll just do the pairings bit. One weekend. Type in names, press a button, get courts. That's all it was supposed to be. Fix Thursdays.
 
-After Covid, our social sessions got hugely popular. Up to five a week: mixed doubles across six courts, twenty-odd players a session, all sorts of abilities, people who'd never met and people who'd played together for ten years, juniors and veterans on the same evening.
+The organiser loved it. People said the games felt fairer. Then someone asked if it could do a reserve list. Then ratings. Then ladders (Dan has thoughts). Then knockouts. Then someone at the padel end asked if it worked for padel, and it did, because if you're moving people round courts the sport barely matters.
 
-One person was organising all of it, purely out of love for the club. They'd graduated from WhatsApp to a secret Excel spreadsheet with some scripting bolted on. It still broke. And when they went on holiday, it either fell to whoever they could rope in, or they ran it from a sun lounger.
+That's how you end up with an app called Rallio that's on phones and has other clubs on it. I didn't plan that. I wanted Thursdays to work.
 
-They collected names. They tried to remember who'd played with whom. They knew everyone's ability, roughly, but turning that into balanced pairings across six courts, in your head, on the fly, is a different thing altogether. They'd screenshot the pairings and post them in the group. Half the people didn't see it. Sometimes the same pair ended up together three rounds running. Sometimes a strong player got stuck with two complete beginners all evening.
+The one thing I didn't expect and still think about: nobody minded much being paired with someone better or worse than them. What they HATED was playing the same person twice. Against you in round one, with you in round three. That annoyed people far more than ability ever did. So that's what the thing ended up being best at. Not repeating.
 
-It wasn't anyone's fault. Balanced mixed doubles rotation across lots of courts (balancing ability, avoiding repeat partners, rotating opponents fairly) is a genuinely hard combinatorial problem. Your brain can't hold it at that size.
+Also nobody wants to sign up for anything. Ever. So now it's just a link in the WhatsApp. You tap it, you see your court. That's it.
 
-People tried ChatGPT. Paste in the names, describe the rules, ask for pairings. It got muddled, repeated pairs, and once put the same player on two courts at the same time. Impressive, but not ideal.
+Thursdays work now. The organiser still runs them, they just don't need the spreadsheet. The noticeboard is still a crime scene. One thing at a time.
 
-So I had a go.
-
-## The weekend project
-
-I'm a designer and developer by trade and run a small studio, so building things is the day job. I started with the core problem: given a bunch of players of different abilities, put them on courts for several rounds of doubles, keep repeat pairings to a minimum, keep matches roughly even, and flag anything that looks off.
-
-The first version was a weekend job. A little web tool. Type in the players, hit generate, get court assignments. It flagged same-gender pairs when that mattered for the format, kept track of who'd played with whom, and gave the organiser something to sanity-check before confirming.
-
-The response at the club was instant. The organiser loved it. Players said the games felt fairer. A few people asked what the thing was.
-
-That was when I realised it wasn't just a club hack.
-
-## What it turned into
-
-Little features crept in. A queue for drop-ins and cancellations. A rating layer so ability could be tracked over time and fed back into pairings. Session history. A ladder for singles and doubles rankings (Dan on here has opinions about ladders). Then competition draws: knockouts and round robins. The mixer, which started all of it, became one of four proper session types.
-
-It was never just for tennis, either. Padel, pickleball, squash, badminton, table tennis: if you're rotating players across courts, the sport hardly matters. And it was always for *players and organisers*, not the back office. There are a hundred products for court booking and membership payments, and clubs take years to change those, probably rightly. I didn't want to go anywhere near that. No court lighting, no bar tabs. Just helping someone run a great session and build a bit of community around it.
-
-## The bit I didn't expect
-
-I assumed people would mind being paired with someone much better or much worse than them. They didn't, much. What they *really* hated was playing the same person twice, once as an opponent and then again as a partner. Ability wasn't the big pain. Repetition was.
-
-The other thing I learned: nobody wants to sign up for anything. So now organisers just share a link. One tap and you're in, no approval queue, no form. You see your pairings and results straight away. If you want more (a profile, a rating, notifications) it's there, but you don't have to.
-
-The useful bit has to show up *before* you ask anyone for anything. Results and pairings that live in the link, not a screenshot. A recap the organiser can share to WhatsApp in two taps. The first reaction needs to be "oh, that's handy", not "oh, another form".
-
-## Where it is now
-
-It's called Rallio, it's on iOS, Android and the web, and it's in free beta while I work out proper pricing for clubs. A handful of other clubs have found their way to it, which still surprises me.
-
-I'm still a member at the same club. The socials still run. The organiser still does a brilliant job, they just use the tool now. The noticeboard is still a mess, but a smaller one. I'm working on the rest.
-
-The games are fairer, though. And sometimes that's enough to keep the rally going.
-
-P.S. Bev would like it noted that she "thought of half of this". She's not wrong.
+P.S. Bev would like it on record that she "thought of half of this". Fair.

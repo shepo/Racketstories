@@ -1,57 +1,39 @@
 ---
-title: Thirteen people: the night our social tennis group broke
+title: Thirteen. It was thirteen people that broke it.
 date: 2026-05-14T20:31
 author: bev
 labels: Organising, Mixers, Tennis
-description: Why social tennis groups stop working once they grow past about 12 players, what breaks first (admin, fairness, memory), and the three habits that let our group grow again without the organiser falling apart.
+description: Why a social tennis group that worked fine at six falls apart once it grows past twelve, and the one thing that saved ours: a list everyone can see.
 image: organiser-cartoon
 imageAlt: Cartoon of a crowd of tennis players all asking a harassed organiser who they're playing with and when
 ---
 
-Our Thursday group started as six of us and one court. It was lovely. Everyone knew if they were in. Pairings were obvious: you played with Sarah last week, so this week you play with Tom. Done.
+Six of us was lovely. Eight was fine. Ten was fine-ish. Twelve I was coping.
 
-Then it was eight. Then ten. Then one Thursday in March, thirteen people turned up, I had a clipboard, a biro that didn't work, and the dawning realisation that I'd become a *system* without anybody asking me.
+Thirteen people turned up on a Thursday in March and I had a clipboard, a biro that didn't work, and absolutely no idea what I was doing.
 
-![Cartoon of a crowd of players asking the organiser questions all at once](organiser-cartoon "An accurate artist's impression of 6.55pm on a Thursday.")
+![Cartoon of a crowd of players asking the organiser questions all at once](organiser-cartoon "6.55pm, every Thursday, give or take a brother-in-law")
 
 <!--more-->
 
-## Six is a list, twelve is a system
+I keep coming back to this because I think it's the thing nobody tells you. When there's six of you it's a LIST. You know who's coming, there's one court, you played with Sarah last week so you play with Tom this week, done. When there's twelve or thirteen it's suddenly a system, and nobody asked me if I wanted to run a system. I wanted to run a tennis night.
 
-This is the thing nobody tells you. A group of six is a list. A group of twelve is a *system*, and the difference is invisible right up until you cross the line.
+What actually went wrong, in the order it went wrong:
 
-At twelve you've got two or three courts, more replies than you can keep in your head, and a creeping sense that some people are getting good games and some aren't. And all the hidden jobs (*who's* balancing the courts, *who's* checking the reserve list, *who's* texting the latecomer to say sorry, no room tonight) land on one person.
+The replies. They come in over four days in no order. In, out, maybe, maybe-now-no, "can I bring my brother-in-law" (Raj, I'm looking at you). I'm holding all of that in my head. I'm holding it in my head at work.
 
-Me. It lands on me. I enjoyed it for about three months.
+Then the courts. If I don't actively stop it, the same four end up on court one every week, the ones who reply first. New people end up together because I don't know who else they'd suit. A month of that and the whole group's set like concrete and none of us meant it to.
 
-## What broke, in order
+Then I can't remember who played who. Did Tom and Sarah play together last week? Three weeks ago? The only record is my head, so the answer is "probably" and probably isn't good enough when Sarah's asking.
 
-Three things went, and they went in this order.
+All three of those are the same problem really, which is that all of it lives in ONE person. Me.
 
-**1. The admin.** Replies come in over four days, in no order at all. I have to hold a register in my head: in, out, maybe, maybe-yes-now-actually-no, and "can I bring my brother-in-law?". I check it on the train. I check it at lunch. I check it at the dentist. It adds up.
+The thing that fixed it, honestly, was making the list public. That's the big one. The minute "who's coming?" is a private question in my DMs I've lost. Now there's one list, everyone can see it, people put themselves on and take themselves off, reserves are on the same list underneath, and when someone drops out the next one moves up. I don't decide. I don't phone anyone. It just moves.
 
-**2. Fairness, slowly sliding.** Without me making a real effort, the same four people ended up on court one most weeks: the ones who replied fastest, or who play about my level. New people played with each other because I didn't know who else would suit them. After a month the whole group had set like concrete, and nobody had meant it to.
+We do it through the app Jake built (Rallio) and it also does the first go at the courts for me, which I can fiddle with. I didn't realise how much of my week was the blank page, just staring at thirteen names going "right, who goes where". Now it's "does this look ok" and nine times out of ten it does.
 
-**3. Shared memory.** Did Tom and Sarah play together last week? Or was it three weeks ago? The only record was my frazzled brain, so the answer was always "probably". And *probably* is the enemy of fair.
+We're about thirty on a Thursday now. I'm still me. I've just stopped being the thing everything has to go through.
 
-## What fixed it
+The list. Make the list public. That's my whole advice.
 
-Three habits. You can do all of these with paper if you like. It's not about the tool, it's about the discipline.
-
-**A reserve list that everyone can see.** The minute "who's in?" becomes a private question in my DMs, I've lost. The list lives somewhere public. People add themselves and take themselves off. Reserves are *part* of the list, not a separate chat. When someone drops, the top reserve moves up. I don't have to decide anything.
-
-**Pairings I don't have to start from scratch.** Something, even something crude, makes a first draft of the courts from who's signed up. I'm allowed to tweak it. I'm not allowed to start from a blank page. Sounds tiny. It's everything. My job went from "balance twelve people across three courts every week" to "have a look at this and tell me if you'd change anything".
-
-**One place for the truth.** Pairings, scores, who played who, all of it somewhere other than the chat. The chat just shares a link. When someone asks "did we play together last week?", they tap the link instead of messaging me at 11pm.
-
-Put together, it's not really about features. It moves the work off the organiser, who was always carrying far too much, and onto a system, which is where it belonged in the first place.
-
-## Where we are now
-
-We run Thursdays as a mixer now, through the app Jake at our club built, and the doubles mix-in is honestly where all this matters most. Singles is a deal between two people. A doubles mixer is a social contract with a whole group: *turn up, get paired, play with different people, and let something else worry about fair*.
-
-Since people started signing themselves up to a list everyone can see, with the courts drafted for me, the group's gone from thirteen-and-panicking to about thirty. I haven't changed. I've just stopped being the bottleneck.
-
-Keeping the rally going, it turns out, mostly means keeping the organiser going.
-
-P.S. The biro still doesn't work. I keep it out of spite.
+P.S. The biro still doesn't work. I keep it in the bag out of spite.

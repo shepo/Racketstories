@@ -1,56 +1,35 @@
 ---
-title: I just want a game on Saturday (a decade of trying)
+title: i just want a game on saturday
 date: 2026-05-12T22:03
 author: dan
 labels: Tennis, Finding a game, Ladders
-description: Finding a tennis partner at your level, free when you're free, is harder than any forehand. An intermediate club player on the forgotten middle, partner-finding apps, and why "be findable" beats "keep asking".
+description: An intermediate club tennis player on how hard it is to find someone to play on a Saturday, why partner-finding apps never worked, and what finally did.
 image: saturday-cartoon
 imageAlt: Cartoon of a lone tennis player standing above dozens of empty courts asking where everyone is
 ---
 
-The hardest shot in my game isn't the backhand. (It is quite hard though. Ask anyone.) The hardest thing about being an intermediate club player is finding someone to play with.
+That's it. That's the post. I just want a game on Saturday.
 
-Not just *someone*. Someone at my level, who's free when I'm free, and who takes it seriously enough for it to be fun but not so seriously that they bring a towel *and* a second towel. If the bar was "two people with rackets", I'd have every Saturday sorted by Wednesday. It never is.
+Not a lesson. Not a league. Not a "social" where I play a 6-0 against a lovely lady who started in March and then get told off by the organiser for "not easing off" (I was easing off, Bev). Just one game, one hour, someone about my level, Saturday morning.
 
-![Cartoon of a lone tennis player looking at lots of empty courts](saturday-cartoon "Saturday, 9am. Twelve courts. Where IS everyone?")
+![Cartoon of a lone tennis player looking at lots of empty courts](saturday-cartoon "Saturday 9am. Twelve courts. where IS everyone")
 
 <!--more-->
 
-## A good game is a four-part puzzle
+I have been trying to get this one simple thing for about ten years.
 
-I've thought about this a lot. Probably too much. A good game needs four things to line up:
+Here's what happens. Wednesday I think, I'll sort Saturday. I message Tom. Tom's at a christening. I message Raj. Raj is "maybe, depends on the kids". I post in the club WhatsApp which has 140 people in it of which 138 have never spoken. Nothing. Friday night Raj says the kids have a party. Saturday I go for a run instead and feel sad about it.
 
-1. Similar ability
-2. Matching availability
-3. An actual court
-4. Somebody being brave enough to *ask*
+Every week. Every single week.
 
-Number four is the killer. Asking is awkward. Being told "ah, can't this week" is mildly crushing, even when it's genuinely because they're at a christening. Do that every week for a few years and you start just... not asking.
+And asking is the bit that actually grinds you down. Getting a "ah can't this week" isn't a big deal on its own, but get it every week for a few years and you just stop asking. I stopped asking for most of 2024. Played about six times.
 
-## Welcome to the forgotten middle
+People keep telling me "there's an app for finding partners". Yes. I've tried them. You swipe through strangers who all say they're "3.5-4.0" (they are not), you have the awkward "so what level are you REALLY" chat, then you still have to find a court, then you do it all again next week. It's the same problem with more steps.
 
-At my club, beginners get coaching groups. Team players get fixtures. Juniors get squads. People like me, the slightly-above-average social player who makes up most of the membership, get a WhatsApp group with 140 people in it, 138 of whom never speak.
+The ONLY thing that's worked is the ladder. I don't ask anyone any more. I'm just on it, I say when I'm free, and people near me challenge me or I challenge them, and the result goes in and that's it. Nobody has to be brave. It's not me asking Tom for the fourth week in a row. It's just "you're next to me on the ladder, Saturday?"
 
-I'm too good to keep turning up to the beginners' social and winning 6-0 (which is no fun for anyone, and I've been told off). I'm not on a team. I don't have a coach booking things for me. So every single week, the job of finding a game is mine.
+Ours runs on Rallio now (Jake at our club built it, and also writes on here), and I've played more Saturday tennis this spring than in the whole of last year. I don't really care which ladder you use though honestly. Just get on one. Stop asking. Be the person who's available instead of the person doing the asking.
 
-Every app I've tried was built for someone else. The court booking app solves the *court*, not the person. The coaching app solves the *coach*. The club system solves the *committee*. I'm left stitching together three apps and a group chat to hit a ball on a Saturday.
+All I wanted was a game on Saturday. I've got one now. Took ten years.
 
-## "There's an app for finding partners!"
-
-Yes, people keep telling me. I've tried them. They've existed for about ten years and, in my experience, they don't really work. Because a partner-finding app is the same awkward coordination problem *with extra steps*. You still swipe through strangers. You still have the "so what level are you, really?" conversation with someone you've never seen hit a ball. You still have to find a court. And you still have to do it all again next week.
-
-What actually helped me wasn't *more* options. It was fewer decisions.
-
-## Be findable, not the finder
-
-The thing that finally fixed my Saturdays was joining a ladder. Hear me out.
-
-On a ladder, you don't go hunting. You join, you say roughly when you're free, and people near you on the ladder can see that and challenge you. When the score goes in, the ranking updates. Nobody had to "ask" anyone in the awkward sense. I made myself available, and the structure did the rest.
-
-It's a small change in your head with a big effect. You stop being *the seeker*, the one emotionally on the hook for asking and getting knocked back, and you become *the available*. Much comfier. The chasing moves to the system, and the system doesn't sulk when someone says no.
-
-Our club ladder now runs through Rallio (Jake, a member here, built it, and also writes on this blog). It has daily challenge limits so you don't get spammed, little badges showing who you've already played, and if there's a dispute about a score, the manager sorts it rather than it turning into a forty-message argument in the group. I've played more Saturday tennis this spring than in the whole of last year.
-
-But honestly, it doesn't have to be that one. If you've spent years saying "I just want a game on Saturday" and slowly giving up, try *any* ladder. The relief of not having to chase is most of the prize.
-
-P.S. Yes, I lost my first ladder match 6-1 6-2. To a man in his seventies. He was very nice about it, which somehow made it worse.
+P.S. lost my first ladder match 6-1 6-2 to a man in his seventies called Derek. he was very nice about it. that was worse.
