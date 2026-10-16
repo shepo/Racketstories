@@ -1,0 +1,26 @@
+{
+  "title": "Racket Stories",
+  "description": "Tales from the tramlines. Real club players, real shanked volleys, real WhatsApp groups that got out of hand.",
+  "tagline": "Tennis, padel, squash, pickleball and the people who organise them (badly, then less badly).",
+  "language": "en-GB",
+  "postsPerPage": 4,
+  "followers": 247,
+  "visitors": "0048213",
+  "blogroll": [
+    { "name": "LTA - find a court near you", "url": "https://www.lta.org.uk/play/find-a-tennis-court/" },
+    { "name": "Rallio (the app Jake built)", "url": "https://rallio.io" },
+    { "name": "Squash rules, for the confused", "url": "https://www.englandsquash.com/" },
+    { "name": "Padel rules, for the even more confused", "url": "https://www.padelfip.com/" },
+    { "name": "Pickleball England", "url": "https://www.pickleballengland.org/" }
+  ],
+  "poll": {
+    "question": "Worst thing that happens at a social?",
+    "options": [
+      ["Same partner three rounds running", 41],
+      ["Someone who 'doesn't really play' (plays for the county)", 33],
+      ["The 6:58pm cancellation", 19],
+      ["Arguing about whether it was out", 7]
+    ],
+    "votes": 312
+  }
+}
