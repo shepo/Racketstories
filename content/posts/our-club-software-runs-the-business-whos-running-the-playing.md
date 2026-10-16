@@ -1,75 +1,37 @@
 ---
-title: Our club software runs the business. Who's running the playing?
+title: Nineteen meetings and it still can't tell me who wants a game
 date: 2026-10-13T21:14
 author: graham
 labels: Club life, Rants, Squash, Organising
-description: A club committee member on choosing club management software, why most systems put admin, payments and access ahead of actually getting members playing, and why we're looking at a white label, club-branded app for the playing side.
+description: A squash section secretary on nineteen committee meetings about club software, a system built around admin and payments instead of playing, and why the club is now looking at a club-branded app for the playing side.
 image: clay-court
 imageAlt: A tennis player in a white shirt and headband waiting to receive serve on a court
 ---
 
-I've sat on our club committee for eleven years. In that time I have attended, by my wife's count, nineteen meetings about booking software. Nineteen. I have spent less time at my own children's weddings.
+Nineteen. I have sat through nineteen committee meetings about club software. My wife keeps count. I have spent less time at my own children's weddings.
 
-Tonight's post is a rant. A constructive one, I hope, but you've been warned.
+And after nineteen meetings, the system we chose still cannot tell me who wants a game.
 
 <!--more-->
 
-## Choosing a club system: a tragedy in many acts
+It can do the till. It can do the membership direct debits. It can do the floodlights, mostly. It does court bookings, it does the accounts, it does something with payroll that only the general manager understands. We paid somebody a frankly upsetting sum, years ago, to make it "integrate" with something else, and now nobody dares touch it in case the lights go off on court four.
 
-Choosing new club software is never quick. The committee wants one thing, the general manager another, the coaches a third, the team captains something else entirely, and the bar manager just wants the till to work. The list of what it has to do grows every meeting: membership, the till, court booking, floodlights, payroll, the accounts. We once paid for a bespoke "integration" that cost a fortune at the time and now nobody dares touch in case the floodlights stop working.
+It cannot tell me who wants a game.
 
-After months of compromise, you end up with a system that does an awful lot, but not necessarily what members actually care about.
+![A tennis player waiting to receive serve](clay-court "The point of the whole exercise, in case the committee had forgotten.")
 
-## What members actually care about
+Last month a new member came up to me in the bar. Nice chap. Three months in. He said "I've paid for a year and I've played twice". Twice! And everything in that building was working perfectly. He'd paid, he'd booked, the gate had let him in. Every box on the committee's list ticked. He just couldn't find anyone to play with, and nothing we'd bought had the faintest interest in helping him.
 
-Here's what I've learned from forty years of squash and eleven of committee: **people stay members because they find people they want to play with.** Not because the invoicing links up nicely with the accounts package.
+That is the whole problem. Every system we've ever looked at puts the admin first, then the payments, then getting in the door, and the actual PLAYING is somewhere at the bottom with a note saying "see WhatsApp". Levels, finding a game, socials, ladders: all left to goodwill, which in practice means Bev.
 
-They care that the club runs things they can join in, that they're getting value for their subs, and that sessions happen at times that fit around work, kids and knees.
+People don't stay members because the invoicing is tidy. They stay because they found people to play with. I've been saying this for eleven years. I'm saying it again.
 
-![A tennis player waiting to receive serve](clay-court "What it's all supposed to be for.")
+So here's what I said at meeting number nineteen, and I'll say it at twenty. Leave the business system alone. It's taken years to bed in and I'm not living through another changeover. Put something next to it, with the club's name on it, that just looks after the playing.
 
-## The member experience is a promise, not a product
+Jake, who built the app our socials and ladders already use, has started offering a version of it, Rallio, that a club can put its own name, logo and colours on, on its own web address. They call it "white label", which I had to look up. The bit that made the committee unfold their arms was that it plugs into what we've already got: booking a court from inside a ladder challenge, only current members able to sign up, logging in with the login people already have. No replacing anything. Our own level groups. One leaderboard across the whole club (the squash section immediately asked whether we could beat the tennis section on it; we can).
 
-Look at most club platforms and the priorities are obvious:
+We haven't decided. We're a committee. We don't decide things, we minute them. But meeting nineteen was the first one where we spent forty minutes on getting members playing and only five on the till.
 
-- **Admin over experience**
-- **Payments over participation**
-- **Access over accessibility**
+Still can't tell me who wants a game though. Yet.
 
-The player side is an afterthought. There's nothing for levels or ability, so it's hard to find the right game. Social play is left to WhatsApp groups and goodwill (mostly Bev's). Competitions happen when the coach has a free week. A member can pay, book a court, swipe through the gate, and still never find a game that suits them.
-
-I had a new member in the bar last month, three months in, lovely chap, who said "I've paid for a year and played twice". That's not a booking problem. That's a *playing* problem.
-
-## A different way of splitting the job
-
-So here's what I've been lobbying for at committee (meeting number twenty, if you're keeping score).
-
-Don't rip out the system that runs the business. It's taken years to bed in, and the floodlights do *mostly* work. Instead, add something alongside it that looks after the **playing side**, branded as the club.
-
-Jake, who built the app our socials and ladders already run on, has started offering a version of Rallio that clubs can put their own name on. They call it "Powered by Rallio", which I'm told is what young people call white label. The club keeps running the business the way it does now, and the club-branded app takes care of:
-
-- **Things to do at every level**: mixers, ladders, box leagues and open games, so everyone can find a game at their level
-- **Competitive play**: knockouts and ladders that run themselves
-- **Simpler social organising**: sign-ups, pairings, results and leaderboards in one place instead of a chain of messages
-
-The managers get less admin. The coaches and captains get to spend their time on the people, not the logistics.
-
-## The bits that made the committee sit up
-
-I took Jake's list along to the last meeting. These were the items that got nods rather than the usual folded arms:
-
-- The **club's own name, logo and colours** throughout, on its own web address (play.ourclub, that sort of thing), with emails and notifications coming from the club
-- **Our own level bands**, so levels mean something at *our* club, plus session templates for our usual week and club house rules shown on every activity
-- A **club-wide leaderboard** across mixers, ladders and competitions (the squash section immediately wanted to know if they could beat the tennis section on it)
-- **Bulk import** from the current member list, a branded join page, and permissions so coaches and captains only manage the activities they run
-- **Hooking into what we already have**: court booking from inside a session or ladder challenge, membership sync so only current members can sign up, and single sign-on with the existing club login
-
-That last one matters most. Nobody on our committee is going through another software change. If it plugs into what we've got, it's a conversation. If it replaces it, it's a resignation letter.
-
-## Where we've got to
-
-We haven't decided anything yet; it's a committee, we don't decide things, we *minute* them. But for the first time in nineteen meetings we spent forty minutes talking about how to get members *playing*, and only five about the till.
-
-I'll take that.
-
-P.S. If your club has been through this and come out the other side, I'd genuinely love to hear how. Grab me by the squash courts. I'm the one in the knee support.
+P.S. If your club has got out the other side of this, please find me by the squash courts. I'm the one in the knee support.

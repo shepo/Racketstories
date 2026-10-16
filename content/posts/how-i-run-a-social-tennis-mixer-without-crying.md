@@ -1,63 +1,43 @@
 ---
-title: How I run a social tennis mixer (without crying in the car park)
+title: Spread the good ones out. That's it. That's the secret.
 date: 2026-06-29T08:05
 author: bev
 labels: Mixers, Organising, Tennis, Padel, Pickleball
-description: A social tennis organiser's step-by-step guide to running a mixer: numbers and formats, balancing pairings, running rotations on the night, handling no-shows and reserves, and recording results. Works for padel and pickleball too.
+description: An organiser's one big tip for running a social tennis mixer (also padel and pickleball): spread your strongest players across the courts, rotate partners, and have the draw ready before anyone arrives.
 image: just-friendly
 imageAlt: Cartoon of a padel doubles match where two players are clearly much stronger than the other two
 ---
 
-A few people at other clubs have asked me how we run our Thursday mixer, so I've finally written it down. It's long. Get a cup of tea.
+Three people from other clubs have now asked me "how do you run your mixer" so here's my answer and it's going to disappoint you because it's one thing.
 
-A good mixer is one of the best things a club can put on. People meet new partners, games stay close, and the courts feel buzzy. It's also one of the hardest sessions to run *well*, because the whole night depends on the pairings and the pace.
+Spread the good players out.
 
 <!--more-->
 
-## What makes a good mixer
+That's it. Honestly. I've been doing this five years and nine out of ten bad nights I've had come down to all the strong players ending up on the same court, or worse, two strong ones against two newbies.
 
-Two things, really. **Games feel fair**, and **people play with different partners**. Get those right and the evening runs itself. Get them wrong and you'll have a lopsided court two and the same four people stuck together for two hours, glaring at you.
+![Cartoon of a lopsided padel match](just-friendly "‘They said it was a friendly.’ This. This is what we're avoiding.")
 
-![Cartoon of a lopsided padel match](just-friendly "‘They said it was a friendly.’ Exactly what we're trying to avoid.")
+Everyone has a miserable time when that happens. The beginners get pinned against the back fence. The good players get bored and start doing that thing where they serve underarm to be "nice" which is somehow worse. And then I get the looks in the bar.
 
-Everything below is in service of those two things. It works the same for padel, pickleball or badminton; our padel lot do exactly this on Sundays, and the pickleball group that's sprung up in the sports hall have nicked it too.
+So: put one stronger player with one still finding their feet, and put them against a pair that looks roughly the same. You don't need ratings or anything clever, you know who's good. I know who's good. You can see it in the warm-up.
 
-## Step 1: Pick the format and do the maths
+And change partners every round. Every round. If someone plays with the same person twice in a night they WILL tell you about it, usually by the biscuits.
 
-First decide: rotating partners or fixed pairs? For a social, I'd always go rotating. The whole point is to mix people up.
+Other stuff, quickly, because people ask:
 
-Doubles needs four per court, so aim for multiples of four. If you end up with an odd few, plan a sit-out rotation so nobody's left on the bench for long (and give the sitter-outer the job of keeping score, it stops them sulking). Check how many courts you've got and for how long, then work out how many rounds fit. Short rounds of about 20 minutes, or first to a set number of games, keep partners changing often.
+Fours. Doubles needs four a court so you want 8, 12, 16. If you've got 13 (you will have 13) someone sits out each round and you rotate it. Give the sitter-outer the scoring job, it stops them sulking.
 
-## Step 2: Balance the pairings
+Short rounds. Twenty minutes or first to so many games. Long rounds and the mixing doesn't happen.
 
-This is where a mixer is won or lost. You want every court competitive, not a top court and a bottom court that never meet.
+Have the draw done BEFORE anyone arrives. If people have to ask you which court they're on you'll get asked forty times. I counted once. Forty-three.
 
-The easy trick is to **spread ability across each court** instead of putting all the strong players together. Pair a stronger player with someone still developing, and put them against a similar mix. You don't need precise ratings. A rough sense of who plays at a similar level is plenty.
+Reserves. Someone will cancel at 6.58pm from the car park because they've "just remembered a dinner". Have a reserve. Have two.
 
-Then **rotate who plays with whom** across the rounds so nobody gets the same partner twice. Variety is what people remember (and moan about if they don't get it).
+Our padel lot do the same on Sundays and the new pickleball group in the sports hall pinched it too, it works for all of them.
 
-## Step 3: On the night
+We run ours through Rallio now and it does the courts for me (and, yes, it spreads the good ones out, I made sure Jake made it do that), and when someone cancels the next reserve gets told automatically so I'm not ringing round from the car park. But you can absolutely do it with paper. I did for years.
 
-Have the schedule ready *before* anyone arrives. People want to know their court and partner without asking you. Call the rounds clearly, watch the clock, and move people on promptly when a round ends. Mixers die when rounds drag and courts are left half-finished.
+Just spread the good ones out. Please. For everyone's sake.
 
-A schedule everyone can see, printed or on their phones, saves you answering "which court am I on?" forty times. I counted once. It was forty-three.
-
-## Step 4: No-shows and reserves
-
-Cancellations are normal. The annoying thing is they always land about an hour before the start, which is exactly when you're least able to rebuild the courts. (Personal record: a cancellation at 6.58pm for a 7pm start. From someone already in the car park. Who'd "just remembered" a dinner.)
-
-Keep a reserve list and a plan for filling gaps fast, whether that's calling up a reserve or tweaking the sit-out rotation. The quicker you can reshuffle, the less one drop-out wrecks the whole night.
-
-## Step 5: Record results and get people coming back
-
-Keeping scores is optional, but it adds something. People like seeing how the night went, and it gives the group a sense of continuity week to week. It's also the easiest way to turn a one-off into a regular thing people plan around.
-
-## How I stopped doing all of that by hand
-
-You can do every step above with paper and a biro, and loads of organisers do. The catch is it all falls on one person. Usually the person who also wants to play. Usually me.
-
-These days we run it through Rallio (Jake from our club built it, and yes, I nag Jake about features constantly). I post the session, and it does sign-ups, balanced courts, reserves and reshuffles in one place. When it fills up, the reserve list takes over. When someone cancels, the next reserve gets moved up and told automatically, which means I'm no longer ringing people from the car park. Players sign up in a couple of taps and see their court and partner on their phone. I actually get to *play*.
-
-If you're running yours by hand, though, the five steps above still work. Just be kind to yourself, and buy a biro that works. (I haven't.)
-
-P.S. Bring biscuits. A mixer with biscuits is a mixer people come back to. This is the most important advice in the whole post.
+P.S. Biscuits. A mixer with biscuits is a mixer people come back to. Fine, two secrets.
