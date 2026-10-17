@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Racket Stories static site generator. No dependencies: `node build.mjs`.
-// Reads content/ and static/, writes a fully static site to dist/.
+// Reads content/ and static/, writes a fully static site to dist/ (served by Cloudflare Workers, see wrangler.jsonc).
 // SITE_URL sets the absolute origin + base path used for canonicals, feeds and the sitemap.
 
 import fs from 'node:fs';
@@ -143,7 +143,7 @@ const posts = fs.readdirSync(path.join(ROOT, 'content/posts')).filter((f) => f.e
   const words = stripTags(html).split(' ').length;
   return {
     ...data, slug, t, labels, words,
-    path: `/${t.y}/${pad(t.mo)}/${slug}.html`,
+    path: `/${t.y}/${pad(t.mo)}/${slug}`,
     html,
     teaser: markdown(teaserMd),
     teaserEager: markdown(teaserMd, { eagerFirstImage: true }),
@@ -155,7 +155,7 @@ const posts = fs.readdirSync(path.join(ROOT, 'content/posts')).filter((f) => f.e
 const labelIndex = {};
 for (const p of posts) for (const l of p.labels) (labelIndex[l] ||= []).push(p);
 const labelPath = (l) => `/search/label/${slugify(l)}/`;
-const authorPath = (k) => `/profile/${k}.html`;
+const authorPath = (k) => `/profile/${k}`;
 
 // ---------- sidebar ----------
 function avatar(k) {
@@ -189,7 +189,7 @@ function sidebar(open) {
   const max = Math.max(...labels.map((l) => labelIndex[l].length));
   const poll = site.poll;
   return `<aside class="sidebar" aria-label="Sidebar">
-<div class="widget"><h2>About us</h2><p>Five club players, one shared password, zero editorial standards. We write about the bits of racket sports nobody puts in the brochure.</p><p><a href="${url('/p/about.html')}">Read the full (honest) story &raquo;</a></p></div>
+<div class="widget"><h2>About us</h2><p>Five club players, one shared password, zero editorial standards. We write about the bits of racket sports nobody puts in the brochure.</p><p><a href="${url('/p/about')}">Read the full (honest) story &raquo;</a></p></div>
 <div class="widget"><h2>Contributors</h2><ul>${Object.keys(authors).map((k) => `<li><a href="${url(authorPath(k))}" rel="author">${esc(authors[k].display)}</a></li>`).join('')}</ul></div>
 <div class="widget archive"><h2>Blog Archive</h2>${archiveTree(open)}</div>
 <div class="widget"><h2>Labels</h2><div class="cloud">${labels.map((l) => {
@@ -240,7 +240,7 @@ ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</sc
 <div class="navbar" role="navigation" aria-label="Blog toolbar">
 <form action="${url('/search/')}" method="get" role="search"><input type="search" name="q" placeholder="Search this blog" aria-label="Search this blog"><button type="submit">Search</button></form>
 <span class="sep">|</span><a href="${url(posts[posts.length - 1].path)}" id="nb">Next Blog&raquo;</a>
-<span class="right"><a href="${url('/p/about.html')}">About</a> <span class="sep">|</span> <a href="${esc(site.links.contact)}" rel="noopener">Contact</a> <span class="sep">|</span> <a href="${esc(site.links.appStore)}" rel="noopener">Get the app</a></span>
+<span class="right"><a href="${url('/p/about')}">About</a> <span class="sep">|</span> <a href="${esc(site.links.contact)}" rel="noopener">Contact</a> <span class="sep">|</span> <a href="${esc(site.links.appStore)}" rel="noopener">Get the app</a></span>
 </div>
 <div class="outer">
 <header class="header">
@@ -255,7 +255,7 @@ ${sidebar(open)}
 </div>
 <footer class="footer">
 <p>&copy; ${posts[0].t.y} ${esc(site.title)}. Theme nicked from about 2008 and lovingly not updated since.</p>
-<p>Stories from real club life. Bev, Dan, Priya and Graham are composite characters; Jake is real and built <a href="https://rallio.io" rel="noopener">Rallio</a>, which some of these stories mention. <a href="${url('/p/about.html')}">More on that here</a>.</p>
+<p>Stories from real club life. Bev, Dan, Priya and Graham are composite characters; Jake is real and built <a href="https://rallio.io" rel="noopener">Rallio</a>, which some of these stories mention. <a href="${url('/p/about')}">More on that here</a>.</p>
 <p><a href="${esc(site.links.contact)}" rel="noopener">Contact</a> &middot; <a href="${esc(site.links.appStore)}" rel="noopener">Rallio on the App Store</a> &middot; <a href="${esc(site.links.googlePlay)}" rel="noopener">Rallio on Google Play</a> &middot; <a href="${url('/feeds/posts/default.xml')}">Atom feed</a> &middot; <a href="${url('/sitemap.xml')}">Sitemap</a></p>
 </footer>
 </div>
@@ -317,7 +317,8 @@ const personLd = (k) => ({ '@type': 'Person', name: authors[k].display, url: abs
 // ---------- write ----------
 const pages = []; // for the sitemap
 function write(p, html, { sitemap = true, lastmod } = {}) {
-  const file = path.join(OUT, p.endsWith('/') ? `${p}index.html` : p);
+  // Cloudflare's static assets serve /a/b.html at /a/b, so pages are linked without the extension.
+  const file = path.join(OUT, p.endsWith('/') ? `${p}index.html` : path.extname(p) ? p : `${p}.html`);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, html);
   if (sitemap) pages.push({ loc: abs(p), lastmod });
@@ -444,9 +445,9 @@ ${k === 'jake' ? `<h2>My other place</h2><p><a href="${esc(site.links.home)}" re
 
 // about page
 const aboutMd = fs.readFileSync(path.join(ROOT, 'content/about.md'), 'utf8');
-write('/p/about.html', layout({
+write('/p/about', layout({
   title: 'About Racket Stories', description: 'Who writes Racket Stories, why, and the honest bit about who is real, who is a composite, and how Rallio fits in.',
-  pathName: '/p/about.html', open: posts[0].t,
+  pathName: '/p/about', open: posts[0].t,
   body: `<article class="post"><h1 class="post-title">About Racket Stories</h1><div class="post-body">${markdown(aboutMd)}
 <h2>The gang</h2><ul>${Object.entries(authors).map(([k, a]) => `<li><a href="${url(authorPath(k))}">${esc(a.display)}</a> &ndash; ${esc(a.short)}</li>`).join('')}</ul></div></article>`,
 }));
@@ -498,6 +499,5 @@ ${pages.map((p) => `<url><loc>${p.loc}</loc>${p.lastmod ? `<lastmod>${p.lastmod}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${abs('/sitemap.xml')}\n`);
-fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 
 console.log(`Built ${posts.length} posts, ${pages.length} indexable pages into dist/ for ${SITE_URL}`);

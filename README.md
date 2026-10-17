@@ -10,11 +10,11 @@ The stories are the posts from the Rallio blog, rewritten as personal first-pers
 - CSS is inlined into every page (about 7 KB). The only JavaScript is the one-line "Next Blog»" randomiser. Fonts are system fonts.
 - Images are served as WebP at 400 and 800 pixels wide, with an 800-pixel JPEG fallback. Each one has a width and height set, and every image except the first is lazy-loaded.
 - For SEO the build adds a canonical URL, meta description, Open Graph and Twitter tags to every page. Posts carry `BlogPosting` and `BreadcrumbList` JSON-LD, the home page carries `WebSite` and `Blog`, and author pages carry `ProfilePage`. It also writes `sitemap.xml`, `robots.txt`, an Atom feed at `/feeds/posts/default.xml` and a 404 page.
-- URLs follow the Blogspot pattern: `/2026/10/post-slug.html`, `/search/label/padel/`, `/2026/10/`, `/p/about.html` and `/profile/bev.html`.
+- URLs follow the Blogspot pattern, minus the `.html`: `/2026/10/post-slug`, `/search/label/padel/`, `/2026/10/`, `/p/about` and `/profile/bev`.
 
 ```bash
-npm run build                      # writes dist/ (SITE_URL defaults to the GitHub Pages URL)
-SITE_URL=http://localhost:8080 npm run serve   # build and preview at localhost:8080
+npm run build                      # writes dist/ (SITE_URL defaults to https://racketstories.com)
+SITE_URL=http://localhost:8080 npm run serve   # build and preview at localhost:8080 (Cloudflare-style URLs)
 ```
 
 ## Writing a post
@@ -47,6 +47,13 @@ To add photos, put full-size JPEGs in a folder and run `scripts/optimise-images.
 
 ## Deploying
 
-`.github/workflows/pages.yml` builds the site and deploys it to GitHub Pages on every push to `main` or `master`. The site lives at **https://racketstories.com**: `static/CNAME` tells GitHub Pages the domain, and `SITE_URL` defaults to it, so canonicals, the feed, the sitemap and `robots.txt` all use it. Set a repository variable `SITE_URL` only if the domain changes.
+The site is hosted on **Cloudflare Workers** (static assets only, no Worker code) at **https://racketstories.com**.
 
-DNS is on Cloudflare: four `A` records (plus four `AAAA`) for the apex pointing at GitHub Pages, and a `www` `CNAME` to `shepo.github.io`, all **DNS only** (grey cloud) so GitHub can issue the HTTPS certificate.
+- `wrangler.jsonc` points Cloudflare at `dist/`, attaches the `racketstories.com` custom domain, serves `dist/404.html` for unknown URLs, and serves `a/b.html` at `/a/b`. That is why pages are linked without `.html`.
+- `static/_headers` (copied to `dist/_headers`) adds security headers and caching for images.
+- The repo is connected to the Worker through **Workers Builds**. Every push to `master` runs `npm run build` and then `npx wrangler deploy`. Pull requests get preview URLs.
+- `SITE_URL` defaults to `https://racketstories.com`, so canonicals, the feed, the sitemap and `robots.txt` use it.
+
+To deploy by hand instead: `npm run deploy` (needs `npx wrangler login` first).
+
+`npm run serve` builds the site and previews it at http://localhost:8080 with the same URL rules as Cloudflare.

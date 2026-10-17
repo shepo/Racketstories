@@ -1,0 +1,16 @@
+// Cloudflare Workers config: the site is static, so the Worker only serves dist/.
+// Build first with `npm run build` (Cloudflare's Workers Builds runs it on every push).
+{
+  "name": "racketstories",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // Serves a/b.html at /a/b and a/index.html at /a/, redirecting the other spellings there.
+    "html_handling": "auto-trailing-slash",
+    // Unknown URLs get dist/404.html with a 404 status.
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "racketstories.com", "custom_domain": true }
+  ]
+}
