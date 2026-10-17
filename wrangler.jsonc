@@ -10,6 +10,8 @@
     // Unknown URLs get dist/404.html with a 404 status.
     "not_found_handling": "404-page"
   },
+  // Worker Previews (preview builds for PR branches) require this block; empty = same settings as production.
+  "previews": {},
   "routes": [
     { "pattern": "racketstories.com", "custom_domain": true }
   ]
