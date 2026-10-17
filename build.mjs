@@ -316,7 +316,17 @@ const personLd = (k) => ({ '@type': 'Person', name: authors[k].display, url: abs
 
 // ---------- write ----------
 const pages = []; // for the sitemap
+// Tag every outbound Rallio link so Rallio's analytics can see visits came from this blog, and which page sent them.
+// utm_content names the page (or "feed"); Google Play gets the same tags through its referrer parameter.
+const pageTag = (p) => (p === '/' ? 'home' : p.replace(/^\/|\/$/g, '').replace(/[^a-z0-9]+/gi, '-').toLowerCase());
+function tagOutbound(html, content) {
+  const utm = `utm_source=racketstories&utm_medium=referral&utm_campaign=blog&utm_content=${content}`;
+  return html
+    .replace(/https:\/\/(?:www\.)?rallio\.io(\/[^"'\s<>?#&]*)?/g, (u) => `${u}?${utm.replace(/&/g, '&amp;')}`)
+    .replace(/(https:\/\/play\.google\.com\/store\/apps\/details\?id=io\.rallio\.app)(?!&)/g, `$1&amp;referrer=${encodeURIComponent(utm)}`);
+}
 function write(p, html, { sitemap = true, lastmod } = {}) {
+  if (p.endsWith('/') || !path.extname(p) || p.endsWith('.html')) html = tagOutbound(html, pageTag(p));
   // Cloudflare's static assets serve /a/b.html at /a/b, so pages are linked without the extension.
   const file = path.join(OUT, p.endsWith('/') ? `${p}index.html` : path.extname(p) ? p : `${p}.html`);
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -486,7 +496,7 @@ ${posts.map((p) => `<entry>
 <author><name>${esc(authors[p.author].display)}</name><uri>${abs(authorPath(p.author))}</uri></author>
 ${p.labels.map((l) => `<category term="${esc(l)}"/>`).join('')}
 <summary>${esc(p.description)}</summary>
-<content type="html">${esc(p.html.replace('<!--more-->', ''))}</content>
+<content type="html">${esc(tagOutbound(p.html.replace('<!--more-->', ''), 'feed'))}</content>
 </entry>`).join('\n')}
 </feed>
 `;
