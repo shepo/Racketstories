@@ -7,7 +7,7 @@ We write about the bits of racket sports nobody puts in the brochure: the WhatsA
 We'd rather you knew this up front.
 
 - **Jake is real.** A member at our club, Jake built [Rallio](https://rallio.io), the app our socials, ladders and mixers run on. Several posts here mention it, because it really is what we use.
-- **Bev, Dan, Priya and Graham are composites.** Each one is stitched together from real people and real things that happened at real clubs (we've all met a Keith). Names and details are changed so nobody's mum recognises them, and so we can be rude about the booking system without getting a letter from the committee.
+- **Everyone else is a composite.** That's Bev, Dan, Priya, Graham, and the coaches and club chair who write here too (Coach Terry, Coach Mel and Malcolm). Each one is stitched together from real people and real things that happened at real clubs (we've all met a Keith). Names and details are changed so nobody's mum recognises them, and so we can be rude about the booking system without getting a letter from the committee.
 - **The stories started life as articles on the Rallio blog.** We've retold them the way they actually felt from the court, the clubhouse and the car park.
 
 ## Getting around

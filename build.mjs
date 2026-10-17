@@ -189,7 +189,7 @@ function sidebar(open) {
   const max = Math.max(...labels.map((l) => labelIndex[l].length));
   const poll = site.poll;
   return `<aside class="sidebar" aria-label="Sidebar">
-<div class="widget"><h2>About us</h2><p>Five club players, one shared password, zero editorial standards. We write about the bits of racket sports nobody puts in the brochure.</p><p><a href="${url('/p/about')}">Read the full (honest) story &raquo;</a></p></div>
+<div class="widget"><h2>About us</h2><p>A handful of club players, coaches and one long-suffering chair. One shared password, zero editorial standards. We write about the bits of racket sports nobody puts in the brochure.</p><p><a href="${url('/p/about')}">Read the full (honest) story &raquo;</a></p></div>
 <div class="widget"><h2>Contributors</h2><ul>${Object.keys(authors).map((k) => `<li><a href="${url(authorPath(k))}" rel="author">${esc(authors[k].display)}</a></li>`).join('')}</ul></div>
 <div class="widget archive"><h2>Blog Archive</h2>${archiveTree(open)}</div>
 <div class="widget"><h2>Labels</h2><div class="cloud">${labels.map((l) => {
@@ -255,7 +255,7 @@ ${sidebar(open)}
 </div>
 <footer class="footer">
 <p>&copy; ${posts[0].t.y} ${esc(site.title)}. Theme nicked from about 2008 and lovingly not updated since.</p>
-<p>Stories from real club life. Bev, Dan, Priya and Graham are composite characters; Jake is real and built <a href="https://rallio.io" rel="noopener">Rallio</a>, which some of these stories mention. <a href="${url('/p/about')}">More on that here</a>.</p>
+<p>Stories from real club life. Everyone here except Jake is a composite character; Jake is real and built <a href="https://rallio.io" rel="noopener">Rallio</a>, which some of these stories mention. <a href="${url('/p/about')}">More on that here</a>.</p>
 <p><a href="${esc(site.links.contact)}" rel="noopener">Contact</a> &middot; <a href="${esc(site.links.appStore)}" rel="noopener">Rallio on the App Store</a> &middot; <a href="${esc(site.links.googlePlay)}" rel="noopener">Rallio on Google Play</a> &middot; <a href="${url('/feeds/posts/default.xml')}">Atom feed</a> &middot; <a href="${url('/sitemap.xml')}">Sitemap</a></p>
 </footer>
 </div>

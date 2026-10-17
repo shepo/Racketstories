@@ -2,7 +2,7 @@
 
 A light-hearted group blog about club racket sports (tennis, padel, squash, pickleball) told from the court, the clubhouse and the car park. It's styled like an old Blogspot blog on purpose: dated header, sidebar archive tree, label cloud, hit counter, "Older Posts" paging and a "Next Blog»" button that takes you somewhere random.
 
-The stories are the posts from the Rallio blog, rewritten as personal first-person accounts by five contributors. Jake is real; Bev, Dan, Priya and Graham are composite characters. The About page and the footer say so.
+The stories are the posts from the Rallio blog, rewritten as personal first-person accounts by club contributors. Jake is real; everyone else (Bev, Dan, Priya, Graham, Coach Terry, Coach Mel and Malcolm) is a composite character. New posts arrive every few days as PRs. The About page and the footer say so.
 
 ## How it's built
 
