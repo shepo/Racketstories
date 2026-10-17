@@ -47,4 +47,6 @@ To add photos, put full-size JPEGs in a folder and run `scripts/optimise-images.
 
 ## Deploying
 
-`.github/workflows/pages.yml` builds the site and deploys it to GitHub Pages on every push to `main` or `master`. Turn it on under **Settings → Pages → Source: GitHub Actions**. If you move to a custom domain, set a repository variable `SITE_URL` (for example `https://racketstories.co.uk`) so canonicals, the feed and the sitemap use it.
+`.github/workflows/pages.yml` builds the site and deploys it to GitHub Pages on every push to `main` or `master`. The site lives at **https://racketstories.com**: `static/CNAME` tells GitHub Pages the domain, and `SITE_URL` defaults to it, so canonicals, the feed, the sitemap and `robots.txt` all use it. Set a repository variable `SITE_URL` only if the domain changes.
+
+DNS is on Cloudflare: four `A` records (plus four `AAAA`) for the apex pointing at GitHub Pages, and a `www` `CNAME` to `shepo.github.io`, all **DNS only** (grey cloud) so GitHub can issue the HTTPS certificate.

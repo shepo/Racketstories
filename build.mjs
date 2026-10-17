@@ -8,7 +8,7 @@ import path from 'node:path';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, 'dist');
-const SITE_URL = (process.env.SITE_URL || 'https://shepo.github.io/Racketstories').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://racketstories.com').replace(/\/$/, '');
 const BASE = new URL(SITE_URL).pathname.replace(/\/$/, '');
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
