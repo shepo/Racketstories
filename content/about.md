@@ -16,6 +16,8 @@ There isn't really a menu, sorry. It's that kind of blog. Use the *Blog Archive*
 
 ## Get in touch
 
-Comments are switched off for now because of the spam robots. If you want to say hello, tell us your own club stories, or report a typo (Graham will want to know), use the [Rallio contact page](https://rallio.io/contact/). It goes to Jake, who passes things on. Or find us on court. We're the ones apologising.
+The conversation carries on in our **[Facebook group](https://www.facebook.com/groups/2578495509243593/)**. Tell us your own stories from the court: the gripes, the niggles, the triumphs, the 6.58pm cancellations. Tennis, padel, pickleball, squash, whatever you play. The one rule is be kind. Moan about the situation, never the person.
+
+Spotted a typo (Graham will want to know) or want a private word? Use the [Rallio contact page](https://rallio.io/contact/). It goes to Jake. Or find us on court. We're the ones apologising.
 
 Want to try the app the stories keep mentioning? It's on the [App Store](https://apps.apple.com/gb/app/rallio/id6765699168) and [Google Play](https://play.google.com/store/apps/details?id=io.rallio.app), and there's more at [rallio.io](https://rallio.io/).

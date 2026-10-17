@@ -190,6 +190,7 @@ function sidebar(open) {
   const poll = site.poll;
   return `<aside class="sidebar" aria-label="Sidebar">
 <div class="widget"><h2>About us</h2><p>A handful of club players, coaches and one long-suffering chair. One shared password, zero editorial standards. We write about the bits of racket sports nobody puts in the brochure.</p><p><a href="${url('/p/about')}">Read the full (honest) story &raquo;</a></p></div>
+<div class="widget"><h2>Join the conversation</h2><p>Stories, gripes, niggles and tales from the court carry on in our Facebook group. All racket sports welcome. Be kind.</p><p><a class="store" href="${esc(site.links.facebook)}" rel="noopener">Racket Stories on Facebook</a></p></div>
 <div class="widget"><h2>Contributors</h2><ul>${Object.keys(authors).map((k) => `<li><a href="${url(authorPath(k))}" rel="author">${esc(authors[k].display)}</a></li>`).join('')}</ul></div>
 <div class="widget archive"><h2>Blog Archive</h2>${archiveTree(open)}</div>
 <div class="widget"><h2>Labels</h2><div class="cloud">${labels.map((l) => {
@@ -197,7 +198,7 @@ function sidebar(open) {
     return `<a href="${url(labelPath(l))}" style="font-size:${(85 + (n / max) * 60).toFixed(0)}%">${esc(l)}</a>&nbsp;(${n})`;
   }).join(' ')}</div></div>
 <div class="widget"><h2>Get the app we keep going on about</h2><p>Rallio runs our mixers, ladders and Graham's Sunday mornings.</p><p><a class="store" href="${esc(site.links.appStore)}" rel="noopener">Download on the App Store</a><br><a class="store" href="${esc(site.links.googlePlay)}" rel="noopener">Get it on Google Play</a></p><small><a href="${esc(site.links.home)}" rel="noopener">What is it?</a></small></div>
-<div class="widget"><h2>Followers (${site.followers})</h2><a href="${esc(site.links.appStore)}" rel="noopener" class="followers" title="Join them: get the app">${followerGrid()}</a><a href="${esc(site.links.appStore)}" rel="noopener">Follow (well, join us on the app)</a><br><small>Hi Mum.</small></div>
+<div class="widget"><h2>Followers (${site.followers})</h2><a href="${esc(site.links.facebook)}" rel="noopener" class="followers" title="Join them in the Facebook group">${followerGrid()}</a><a href="${esc(site.links.facebook)}" rel="noopener">Follow (join the Facebook group)</a><br><small>Hi Mum.</small></div>
 <div class="widget poll"><h2>Poll</h2><p><b>${esc(poll.question)}</b></p>${poll.options.map(([o, pc, slug]) => { const t = posts.find((x) => x.slug === slug); return `<label>${t ? `<a href="${url(t.path)}">${esc(o)}</a>` : esc(o)} (${pc}%)</label><div class="bar" style="width:${pc}%"></div>`; }).join('')}<small>${poll.votes} votes. Poll closed because Dan kept voting. Click an answer to read the moan about it.</small></div>
 <div class="widget"><h2>Blogs &amp; links we like</h2><ul>${site.blogroll.map((b) => `<li><a href="${esc(b.url)}" rel="noopener">${esc(b.name)}</a></li>`).join('')}</ul></div>
 <div class="widget"><h2>Subscribe to</h2><a href="${url('/feeds/posts/default.xml')}" class="badge"><b>XML</b><i>Posts (Atom)</i></a></div>
@@ -240,7 +241,7 @@ ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</sc
 <div class="navbar" role="navigation" aria-label="Blog toolbar">
 <form action="${url('/search/')}" method="get" role="search"><input type="search" name="q" placeholder="Search this blog" aria-label="Search this blog"><button type="submit">Search</button></form>
 <span class="sep">|</span><a href="${url(posts[posts.length - 1].path)}" id="nb">Next Blog&raquo;</a>
-<span class="right"><a href="${url('/p/about')}">About</a> <span class="sep">|</span> <a href="${esc(site.links.contact)}" rel="noopener">Contact</a> <span class="sep">|</span> <a href="${esc(site.links.appStore)}" rel="noopener">Get the app</a></span>
+<span class="right"><a href="${url('/p/about')}">About</a> <span class="sep">|</span> <a href="${esc(site.links.facebook)}" rel="noopener">Facebook group</a> <span class="sep">|</span> <a href="${esc(site.links.contact)}" rel="noopener">Contact</a> <span class="sep">|</span> <a href="${esc(site.links.appStore)}" rel="noopener">Get the app</a></span>
 </div>
 <div class="outer">
 <header class="header">
@@ -256,7 +257,7 @@ ${sidebar(open)}
 <footer class="footer">
 <p>&copy; ${posts[0].t.y} ${esc(site.title)}. Theme nicked from about 2008 and lovingly not updated since.</p>
 <p>Stories from real club life. Everyone here except Jake is a composite character; Jake is real and built <a href="https://rallio.io" rel="noopener">Rallio</a>, which some of these stories mention. <a href="${url('/p/about')}">More on that here</a>.</p>
-<p><a href="${esc(site.links.contact)}" rel="noopener">Contact</a> &middot; <a href="${esc(site.links.appStore)}" rel="noopener">Rallio on the App Store</a> &middot; <a href="${esc(site.links.googlePlay)}" rel="noopener">Rallio on Google Play</a> &middot; <a href="${url('/feeds/posts/default.xml')}">Atom feed</a> &middot; <a href="${url('/sitemap.xml')}">Sitemap</a></p>
+<p><a href="${esc(site.links.facebook)}" rel="noopener">Join the Facebook group</a> &middot; <a href="${esc(site.links.contact)}" rel="noopener">Contact</a> &middot; <a href="${esc(site.links.appStore)}" rel="noopener">Rallio on the App Store</a> &middot; <a href="${esc(site.links.googlePlay)}" rel="noopener">Rallio on Google Play</a> &middot; <a href="${url('/feeds/posts/default.xml')}">Atom feed</a> &middot; <a href="${url('/sitemap.xml')}">Sitemap</a></p>
 </footer>
 </div>
 ${randomScript}
@@ -311,7 +312,7 @@ const pager = (newer, older) => `<nav class="blog-pager" aria-label="More posts"
 </nav>
 <div class="feed-links">Subscribe to: <a href="${url('/feeds/posts/default.xml')}">Posts (Atom)</a></div>`;
 
-const publisher = { '@type': 'Organization', name: site.title, url: abs('/'), logo: { '@type': 'ImageObject', url: abs('/favicon.svg') } };
+const publisher = { '@type': 'Organization', name: site.title, url: abs('/'), sameAs: [site.links.facebook], logo: { '@type': 'ImageObject', url: abs('/favicon.svg') } };
 const personLd = (k) => ({ '@type': 'Person', name: authors[k].display, url: abs(authorPath(k)) });
 
 // ---------- write ----------
@@ -370,7 +371,7 @@ ${p.comments.map((c) => {
     const who = c.author ? `<a href="${url(authorPath(c.author))}">${esc(authors[c.author].display)}</a>` : esc(c.name);
     return `<div class="comment${c.author === p.author ? ' author' : ''}"><span class="who">${who}</span> said...<p>${inline(esc(c.text))}</p><span class="when">${t.d} ${MONTHS[t.mo - 1]} ${t.y} at ${clock(t)}</span></div>`;
   }).join('\n')}
-<p class="comment-closed"><b>Post a Comment</b><br>Comments are switched off at the moment because a robot kept offering Bev cheap trainers. Got something to say, or a story of your own? <a href="${esc(site.links.contact)}" rel="noopener">Send it in here</a> and Jake will pass it on. Or tell us in person, ideally between points.</p>
+<p class="comment-closed"><b>Post a Comment</b><br>The comments live in our Facebook group now. Fewer spam robots, more people moaning about court allocation. Agree with ${esc(a.name)}? Got a worse story? <a href="${esc(site.links.facebook)}" rel="noopener">Join the conversation on Facebook &raquo;</a></p>
 </section>`;
   const jsonld = [{
     '@context': 'https://schema.org', '@type': 'BlogPosting',
