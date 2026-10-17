@@ -16,4 +16,6 @@ There isn't really a menu, sorry. It's that kind of blog. Use the *Blog Archive*
 
 ## Get in touch
 
-Comments are switched off for now because of the spam robots. If you want to say hello, tell us your own club stories, or report a typo (Graham will want to know), find us on court. We're the ones apologising.
+Comments are switched off for now because of the spam robots. If you want to say hello, tell us your own club stories, or report a typo (Graham will want to know), use the [Rallio contact page](https://rallio.io/contact/). It goes to Jake, who passes things on. Or find us on court. We're the ones apologising.
+
+Want to try the app the stories keep mentioning? It's on the [App Store](https://apps.apple.com/gb/app/rallio/id6765699168) and [Google Play](https://play.google.com/store/apps/details?id=io.rallio.app), and there's more at [rallio.io](https://rallio.io/).

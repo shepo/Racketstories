@@ -26,7 +26,7 @@ I build software for a living so I thought, I'll just do the pairings bit. One w
 
 The organiser loved it. People said the games felt fairer. Then someone asked if it could do a reserve list. Then ratings. Then ladders (Dan has thoughts). Then knockouts. Then someone at the padel end asked if it worked for padel, and it did, because if you're moving people round courts the sport barely matters.
 
-That's how you end up with an app called Rallio that's on phones and has other clubs on it. I didn't plan that. I wanted Thursdays to work.
+That's how you end up with an app called [Rallio](https://rallio.io/) that's on phones and has other clubs on it. I didn't plan that. I wanted Thursdays to work.
 
 The one thing I didn't expect and still think about: nobody minded much being paired with someone better or worse than them. What they HATED was playing the same person twice. Against you in round one, with you in round three. That annoyed people far more than ability ever did. So that's what the thing ended up being best at. Not repeating.
 

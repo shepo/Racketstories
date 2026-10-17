@@ -7,20 +7,73 @@
   "followers": 247,
   "visitors": "0048213",
   "blogroll": [
-    { "name": "LTA - find a court near you", "url": "https://www.lta.org.uk/play/find-a-tennis-court/" },
-    { "name": "Rallio (the app Jake built)", "url": "https://rallio.io" },
-    { "name": "Squash rules, for the confused", "url": "https://www.englandsquash.com/" },
-    { "name": "Padel rules, for the even more confused", "url": "https://www.padelfip.com/" },
-    { "name": "Pickleball England", "url": "https://www.pickleballengland.org/" }
+    {
+      "name": "Free round robin generator (Bev uses it when the wifi works)",
+      "url": "https://rallio.io/tools/round-robin-generator/"
+    },
+    {
+      "name": "Free knockout bracket maker",
+      "url": "https://rallio.io/tools/knockout-bracket-generator/"
+    },
+    {
+      "name": "How tennis ladders work",
+      "url": "https://rallio.io/ladders/"
+    },
+    {
+      "name": "Box leagues explained (for Graham)",
+      "url": "https://rallio.io/box-leagues/"
+    },
+    {
+      "name": "Running a mixer",
+      "url": "https://rallio.io/mixers/"
+    },
+    {
+      "name": "Padel, for the confused",
+      "url": "https://rallio.io/padel/"
+    },
+    {
+      "name": "Squash",
+      "url": "https://rallio.io/squash/"
+    },
+    {
+      "name": "Pickleball",
+      "url": "https://rallio.io/pickleball/"
+    },
+    {
+      "name": "Rallio (the app Jake built)",
+      "url": "https://rallio.io/"
+    }
   ],
   "poll": {
     "question": "Worst thing that happens at a social?",
     "options": [
-      ["Same partner three rounds running", 41],
-      ["Someone who 'doesn't really play' (plays for the county)", 33],
-      ["The 6:58pm cancellation", 19],
-      ["Arguing about whether it was out", 7]
+      [
+        "Same partner three rounds running",
+        41,
+        "how-i-run-a-social-tennis-mixer-without-crying"
+      ],
+      [
+        "Someone who 'doesn't really play' (plays for the county)",
+        33,
+        "i-said-sorry-46-times-at-tuesdays-mixer"
+      ],
+      [
+        "The 6:58pm cancellation",
+        19,
+        "thirteen-people-the-night-our-social-tennis-broke"
+      ],
+      [
+        "Arguing about whether it was out",
+        7,
+        "seven-months-running-our-tennis-ladder-on-a-spreadsheet"
+      ]
     ],
     "votes": 312
+  },
+  "links": {
+    "appStore": "https://apps.apple.com/gb/app/rallio/id6765699168",
+    "googlePlay": "https://play.google.com/store/apps/details?id=io.rallio.app",
+    "contact": "https://rallio.io/contact/",
+    "home": "https://rallio.io/"
   }
 }

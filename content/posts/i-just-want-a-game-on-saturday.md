@@ -28,7 +28,7 @@ People keep telling me "there's an app for finding partners". Yes. I've tried th
 
 The ONLY thing that's worked is the ladder. I don't ask anyone any more. I'm just on it, I say when I'm free, and people near me challenge me or I challenge them, and the result goes in and that's it. Nobody has to be brave. It's not me asking Tom for the fourth week in a row. It's just "you're next to me on the ladder, Saturday?"
 
-Ours runs on Rallio now (Jake at our club built it, and also writes on here), and I've played more Saturday tennis this spring than in the whole of last year. I don't really care which ladder you use though honestly. Just get on one. Stop asking. Be the person who's available instead of the person doing the asking.
+Ours runs on [Rallio](https://rallio.io/ladders/) now (Jake at our club built it, and also writes on here), and I've played more Saturday tennis this spring than in the whole of last year. I don't really care which ladder you use though honestly. Just get on one. Stop asking. Be the person who's available instead of the person doing the asking.
 
 All I wanted was a game on Saturday. I've got one now. Took ten years.
 
