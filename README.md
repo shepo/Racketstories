@@ -2,7 +2,7 @@
 
 A light-hearted group blog about club racket sports (tennis, padel, squash, pickleball) told from the court, the clubhouse and the car park. It's styled like an old Blogspot blog on purpose: dated header, sidebar archive tree, label cloud, hit counter, "Older Posts" paging and a "Next Blog»" button that takes you somewhere random.
 
-The stories are the posts from the Rallio blog, rewritten as personal first-person accounts by five contributors. Jake is real; Bev, Dan, Priya and Graham are composite characters. The About page and the footer say so.
+The stories are the posts from the Rallio blog, rewritten as personal first-person accounts by club contributors. Jake is real; everyone else (Bev, Dan, Priya, Graham, Coach Terry, Coach Mel and Malcolm) is a composite character. New posts arrive every few days as PRs. The About page and the footer say so.
 
 ## How it's built
 
@@ -51,7 +51,7 @@ The site is hosted on **Cloudflare Workers** (static assets only, no Worker code
 
 - `wrangler.jsonc` points Cloudflare at `dist/`, attaches the `racketstories.com` custom domain, serves `dist/404.html` for unknown URLs, and serves `a/b.html` at `/a/b`. That is why pages are linked without `.html`.
 - `static/_headers` (copied to `dist/_headers`) adds security headers and caching for images.
-- The repo is connected to the Worker through **Workers Builds**. Every push to `master` runs `npm run build` and then `npx wrangler deploy`. Pull requests get preview URLs.
+- The repo is connected to the Worker through **Workers Builds**. Every push to `master` runs `npm run build` and then `npx wrangler deploy`. Other branches (every PR) run `npx wrangler preview` and get a preview link on the PR. Previews need the `previews` block in `wrangler.jsonc` and Wrangler 4.135+, which is pinned in `package.json`.
 - `SITE_URL` defaults to `https://racketstories.com`, so canonicals, the feed, the sitemap and `robots.txt` use it.
 
 To deploy by hand instead: `npm run deploy` (needs `npx wrangler login` first).

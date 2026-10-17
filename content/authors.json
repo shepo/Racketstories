@@ -8,7 +8,12 @@
     "since": "2019",
     "short": "Thursday social organiser since 2019. Keeper of the clipboard. Has strong opinions about tramlines.",
     "bio": "I started organising our Thursday night social tennis because nobody else would, and five years later nobody else still will. I've got two grown-up kids, one dog who steals balls, and a forehand my coach describes as 'enthusiastic'. I write here mostly so I can stop explaining the same things in the WhatsApp group.",
-    "interests": ["mixed doubles", "spreadsheets (against my will)", "biscuits after tennis", "the dog"]
+    "interests": [
+      "mixed doubles",
+      "spreadsheets (against my will)",
+      "biscuits after tennis",
+      "the dog"
+    ]
   },
   "dan": {
     "name": "Dan",
@@ -19,7 +24,12 @@
     "since": "2021",
     "short": "34. Intermediate forever. Ran the club ladder off a spreadsheet for seven months and lived to tell the tale.",
     "bio": "Accountant by day, 3.5 by night (on a good night, with a following wind). I'm in that bit of the club where you're too good for the beginners' social and nowhere near good enough for the team, so I spend most of my life trying to find a game. This blog is a cry for help with paragraph breaks.",
-    "interests": ["finding a game on Saturday", "padel (reluctantly)", "spreadsheets (willingly)", "string tension debates"]
+    "interests": [
+      "finding a game on Saturday",
+      "padel (reluctantly)",
+      "spreadsheets (willingly)",
+      "string tension debates"
+    ]
   },
   "priya": {
     "name": "Priya",
@@ -30,7 +40,12 @@
     "since": "2026",
     "short": "Picked up a racket in July. Have apologised more times than I've hit a winner.",
     "bio": "I joined my local club this summer after my friend promised padel was 'basically just tennis in a box'. It is not. I'm documenting my first year as a racket sports person so future beginners know it's normal to feel like a ball machine has a personal grudge against you.",
-    "interests": ["padel", "not getting hit by a volley", "post-match chips", "counting things"]
+    "interests": [
+      "padel",
+      "not getting hit by a volley",
+      "post-match chips",
+      "counting things"
+    ]
   },
   "graham": {
     "name": "Graham",
@@ -41,7 +56,60 @@
     "since": "2017",
     "short": "Retired. Squash section secretary. Has sat through more committee meetings about booking software than any man should.",
     "bio": "Forty years of squash, eleven on the club committee, and a working knowledge of every booking system that has ever crashed on a Sunday morning. My wife says I should take up golf. I say golf is just squash for people who've given up. I write here when the committee minutes aren't enough of an outlet.",
-    "interests": ["squash", "committee procedure", "complaining constructively", "real ale"]
+    "interests": [
+      "squash",
+      "committee procedure",
+      "complaining constructively",
+      "real ale"
+    ]
+  },
+  "terry": {
+    "name": "Terry",
+    "display": "Coach Terry",
+    "colour": "#7f6000",
+    "location": "Surrey",
+    "plays": "Tennis coach (LTA Level 3), reluctant padel coach",
+    "since": "2026",
+    "short": "Tennis coach for 22 years. Has opinions about pickleball, padel, ball machines and parents. Mostly the same opinion.",
+    "bio": "I've coached tennis at the club since before half the members were born. I run the junior squads, the Monday cardio tennis and, since the committee 'had a vision', padel beginners on a Wednesday. I don't do social media. Bev said this isn't social media. I'm not convinced.",
+    "interests": [
+      "tennis",
+      "proper footwork",
+      "complaining about court allocation",
+      "tea, strong"
+    ]
+  },
+  "mel": {
+    "name": "Mel",
+    "display": "Coach Mel!",
+    "colour": "#d35400",
+    "location": "Surrey",
+    "plays": "Pickleball and tennis coach, padel whenever there's a court",
+    "since": "2026",
+    "short": "Tennis AND pickleball coach. Thinks every racket sport is the best racket sport. Overuses capitals.",
+    "bio": "I coach tennis and pickleball at the club and run our Saturday pickleball drop-in, which has gone from 6 people to 40 in a year!! I genuinely think anyone can play a racket sport and have a brilliant time if someone just gets them on court and stops them worrying. Terry and I disagree about almost everything. It's fine. Mostly.",
+    "interests": [
+      "pickleball",
+      "beginners",
+      "getting juniors hooked",
+      "Terry's face when I say 'dink'"
+    ]
+  },
+  "malcolm": {
+    "name": "Malcolm",
+    "display": "Malcolm (Chair)",
+    "colour": "#34495e",
+    "location": "Surrey",
+    "plays": "Tennis, badly, in the over-60s B team",
+    "since": "2026",
+    "short": "Club chair. Writes as he speaks at the AGM: briefly, and with a sigh.",
+    "bio": "Chair of the club since a vote nobody else stood in. Before that, treasurer, which explains a lot. I play doubles in the over-60s B team and serve underarm when my shoulder says so. I have been asked to contribute to this blog. I am contributing.",
+    "interests": [
+      "agendas",
+      "the roof over court 3",
+      "the defibrillator rota",
+      "silence"
+    ]
   },
   "jake": {
     "name": "Jake",
@@ -52,6 +120,11 @@
     "since": "2018",
     "short": "Designer and developer, member at a big multi-sport club in Surrey. Accidentally built an app because of a WhatsApp group.",
     "bio": "I run a small design and development studio and play social tennis at a club in Surrey. A couple of years ago I got fed up of watching our social organiser juggle a secret spreadsheet, so I built a little tool to do the pairings. It turned into Rallio. Bev made me write a post about it. I'm the only one on here using my real name, which means I can't hide my double faults.",
-    "interests": ["social tennis", "building things", "fair pairings", "the club bar"]
+    "interests": [
+      "social tennis",
+      "building things",
+      "fair pairings",
+      "the club bar"
+    ]
   }
 }
