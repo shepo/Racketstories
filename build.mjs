@@ -196,8 +196,9 @@ function sidebar(open) {
     const n = labelIndex[l].length;
     return `<a href="${url(labelPath(l))}" style="font-size:${(85 + (n / max) * 60).toFixed(0)}%">${esc(l)}</a>&nbsp;(${n})`;
   }).join(' ')}</div></div>
-<div class="widget"><h2>Followers (${site.followers})</h2><div class="followers" aria-hidden="true">${followerGrid()}</div><small>Hi Mum.</small></div>
-<div class="widget poll"><h2>Poll</h2><p><b>${esc(poll.question)}</b></p>${poll.options.map(([o, pc]) => `<label>${esc(o)} (${pc}%)</label><div class="bar" style="width:${pc}%"></div>`).join('')}<small>${poll.votes} votes. Poll closed because Dan kept voting.</small></div>
+<div class="widget"><h2>Get the app we keep going on about</h2><p>Rallio runs our mixers, ladders and Graham's Sunday mornings.</p><p><a class="store" href="${esc(site.links.appStore)}" rel="noopener">Download on the App Store</a><br><a class="store" href="${esc(site.links.googlePlay)}" rel="noopener">Get it on Google Play</a></p><small><a href="${esc(site.links.home)}" rel="noopener">What is it?</a></small></div>
+<div class="widget"><h2>Followers (${site.followers})</h2><a href="${esc(site.links.appStore)}" rel="noopener" class="followers" title="Join them: get the app">${followerGrid()}</a><a href="${esc(site.links.appStore)}" rel="noopener">Follow (well, join us on the app)</a><br><small>Hi Mum.</small></div>
+<div class="widget poll"><h2>Poll</h2><p><b>${esc(poll.question)}</b></p>${poll.options.map(([o, pc, slug]) => { const t = posts.find((x) => x.slug === slug); return `<label>${t ? `<a href="${url(t.path)}">${esc(o)}</a>` : esc(o)} (${pc}%)</label><div class="bar" style="width:${pc}%"></div>`; }).join('')}<small>${poll.votes} votes. Poll closed because Dan kept voting. Click an answer to read the moan about it.</small></div>
 <div class="widget"><h2>Blogs &amp; links we like</h2><ul>${site.blogroll.map((b) => `<li><a href="${esc(b.url)}" rel="noopener">${esc(b.name)}</a></li>`).join('')}</ul></div>
 <div class="widget"><h2>Subscribe to</h2><a href="${url('/feeds/posts/default.xml')}" class="badge"><b>XML</b><i>Posts (Atom)</i></a></div>
 <div class="widget"><h2>Visitors since 2019</h2><div class="counter" aria-label="${site.visitors} visitors">${[...site.visitors].map((d) => `<b>${d}</b>`).join('')}</div><br><small>(Bev refreshes it a lot)</small></div>
@@ -207,7 +208,6 @@ function sidebar(open) {
 // ---------- layout ----------
 const css = fs.readFileSync(path.join(ROOT, 'static/style.css'), 'utf8')
   .replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s*\n\s*/g, '').replace(/\s*([{};,>])\s*/g, '$1').replace(/;}/g, '}');
-const host = new URL(SITE_URL).host;
 const randomScript = `<script>document.getElementById('nb').onclick=function(e){var u=${JSON.stringify(posts.map((p) => url(p.path)))};e.preventDefault();location.href=u[Math.floor(Math.random()*u.length)]}</script>`;
 
 function layout({ title, description, pathName, body, open, ogImage, ogType = 'website', jsonld = [], noindex = false }) {
@@ -238,9 +238,9 @@ ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</sc
 <body>
 <a class="skip" href="#main">Skip to the stories</a>
 <div class="navbar" role="navigation" aria-label="Blog toolbar">
-<form action="https://duckduckgo.com/" method="get" role="search"><input type="hidden" name="sites" value="${esc(host)}"><input type="search" name="q" placeholder="Search this blog" aria-label="Search this blog"><button type="submit">Search</button></form>
+<form action="${url('/search/')}" method="get" role="search"><input type="search" name="q" placeholder="Search this blog" aria-label="Search this blog"><button type="submit">Search</button></form>
 <span class="sep">|</span><a href="${url(posts[posts.length - 1].path)}" id="nb">Next Blog&raquo;</a>
-<span class="right"><a href="${url('/p/about.html')}">About</a> <span class="sep">|</span> <a href="${url('/feeds/posts/default.xml')}">Subscribe</a></span>
+<span class="right"><a href="${url('/p/about.html')}">About</a> <span class="sep">|</span> <a href="${esc(site.links.contact)}" rel="noopener">Contact</a> <span class="sep">|</span> <a href="${esc(site.links.appStore)}" rel="noopener">Get the app</a></span>
 </div>
 <div class="outer">
 <header class="header">
@@ -256,6 +256,7 @@ ${sidebar(open)}
 <footer class="footer">
 <p>&copy; ${posts[0].t.y} ${esc(site.title)}. Theme nicked from about 2008 and lovingly not updated since.</p>
 <p>Stories from real club life. Bev, Dan, Priya and Graham are composite characters; Jake is real and built <a href="https://rallio.io" rel="noopener">Rallio</a>, which some of these stories mention. <a href="${url('/p/about.html')}">More on that here</a>.</p>
+<p><a href="${esc(site.links.contact)}" rel="noopener">Contact</a> &middot; <a href="${esc(site.links.appStore)}" rel="noopener">Rallio on the App Store</a> &middot; <a href="${esc(site.links.googlePlay)}" rel="noopener">Rallio on Google Play</a> &middot; <a href="${url('/feeds/posts/default.xml')}">Atom feed</a> &middot; <a href="${url('/sitemap.xml')}">Sitemap</a></p>
 </footer>
 </div>
 ${randomScript}
@@ -265,6 +266,16 @@ ${randomScript}
 }
 
 // ---------- fragments ----------
+function shareLinks(p) {
+  const link = encodeURIComponent(abs(p.path));
+  const text = encodeURIComponent(p.title);
+  return [
+    ['Email this', `mailto:?subject=${text}&body=${link}`],
+    ['WhatsApp', `https://wa.me/?text=${text}%20${link}`],
+    ['Share to X', `https://twitter.com/intent/tweet?text=${text}&url=${link}`],
+    ['Share to Facebook', `https://www.facebook.com/sharer/sharer.php?u=${link}`],
+  ].map(([label, href]) => `<a href="${esc(href)}" rel="noopener nofollow">${label}</a>`).join(' | ');
+}
 function postFooter(p) {
   const a = authors[p.author];
   const n = p.comments.length;
@@ -272,6 +283,7 @@ function postFooter(p) {
 Posted by <a href="${url(authorPath(p.author))}" rel="author">${esc(a.display)}</a> at <a href="${url(p.path)}" title="permanent link"><time datetime="${iso(p.t)}">${clock(p.t)}</time></a>
 &nbsp; <a href="${url(p.path)}#comments">${n} comment${n === 1 ? '' : 's'}</a>
 <br><span class="labels">Labels: ${p.labels.map((l) => `<a href="${url(labelPath(l))}" rel="tag">${esc(l)}</a>`).join(', ')}</span>
+<br><span class="share">Share: ${shareLinks(p)}</span>
 </div>`;
 }
 function postSummary(p, showDate, eager) {
@@ -347,7 +359,7 @@ ${p.comments.map((c) => {
     const who = c.author ? `<a href="${url(authorPath(c.author))}">${esc(authors[c.author].display)}</a>` : esc(c.name);
     return `<div class="comment${c.author === p.author ? ' author' : ''}"><span class="who">${who}</span> said...<p>${inline(esc(c.text))}</p><span class="when">${t.d} ${MONTHS[t.mo - 1]} ${t.y} at ${clock(t)}</span></div>`;
   }).join('\n')}
-<p class="comment-closed"><b>Post a Comment</b><br>Comments are switched off at the moment because a robot kept offering Bev cheap trainers. Tell us in person, ideally between points rather than during them.</p>
+<p class="comment-closed"><b>Post a Comment</b><br>Comments are switched off at the moment because a robot kept offering Bev cheap trainers. Got something to say, or a story of your own? <a href="${esc(site.links.contact)}" rel="noopener">Send it in here</a> and Jake will pass it on. Or tell us in person, ideally between points.</p>
 </section>`;
   const jsonld = [{
     '@context': 'https://schema.org', '@type': 'BlogPosting',
@@ -377,7 +389,7 @@ ${related.length ? `<div class="related"><h4>You might also like:</h4><ul>${rela
 <span class="home"><a href="${url('/')}">Home</a></span>
 <span>${older ? `<a href="${url(older.path)}" rel="next" title="${esc(older.title)}">Older Post &raquo;</a>` : ''}</span>
 </nav>
-<div class="feed-links">Subscribe to: <a href="${url('/feeds/posts/default.xml')}">Post Comments (there aren't any feeds for those, sorry)</a></div>`;
+<div class="feed-links">Subscribe to: <a href="${url('/feeds/posts/default.xml')}">Posts (Atom)</a></div>`;
   write(p.path, layout({ title: p.title, description: p.description, pathName: p.path, open: p.t, ogImage: p.image, ogType: 'article', jsonld, body }), { lastmod: iso(p.t) });
 });
 
@@ -425,6 +437,7 @@ for (const [k, a] of Object.entries(authors)) {
 <p><b>Location:</b> ${esc(a.location)}<br><b>Plays:</b> ${esc(a.plays)}<br><b>Blogging since:</b> ${esc(a.since)}</p></div></div>
 <div class="post-body"><h2>About me</h2><p>${esc(a.bio)}</p>
 <h2>Interests</h2><p>${a.interests.map(esc).join(', ')}</p>
+${k === 'jake' ? `<h2>My other place</h2><p><a href="${esc(site.links.home)}" rel="noopener">rallio.io</a> &middot; <a href="${esc(site.links.appStore)}" rel="noopener">App Store</a> &middot; <a href="${esc(site.links.googlePlay)}" rel="noopener">Google Play</a> &middot; <a href="${esc(site.links.contact)}" rel="noopener">Get in touch</a></p>` : ''}
 <h2>Posts by ${esc(a.name)}</h2>${list.length ? `<ul>${list.map((p) => `<li><a href="${url(p.path)}">${esc(p.title)}</a> <small>(${p.t.d} ${MONTHS[p.t.mo - 1]} ${p.t.y})</small></li>`).join('')}</ul>` : '<p>Nothing yet. Keep nagging.</p>'}</div>`,
   }));
 }
@@ -437,6 +450,16 @@ write('/p/about.html', layout({
   body: `<article class="post"><h1 class="post-title">About Racket Stories</h1><div class="post-body">${markdown(aboutMd)}
 <h2>The gang</h2><ul>${Object.entries(authors).map(([k, a]) => `<li><a href="${url(authorPath(k))}">${esc(a.display)}</a> &ndash; ${esc(a.short)}</li>`).join('')}</ul></div></article>`,
 }));
+
+// search (the toolbar box submits here; filtering is done in the browser)
+write('/search/', layout({
+  title: 'Search this blog', description: `Search every ${site.title} post: tennis, padel, squash, mixers, ladders and club life.`,
+  pathName: '/search/', open: posts[0].t, noindex: true,
+  body: `<div class="status-msg" id="search-msg">Showing all ${posts.length} posts. Type something in the box at the top to narrow it down.</div>
+<ul class="search-results">${posts.map((p) => `<li data-s="${esc([p.title, p.description, p.labels.join(' '), authors[p.author].display, stripTags(p.html)].join(' ').toLowerCase())}"><a href="${url(p.path)}">${esc(p.title)}</a> <small>by ${esc(authors[p.author].display)}, ${p.t.d} ${MONTHS[p.t.mo - 1]} ${p.t.y}</small><br>${esc(p.description)}</li>`).join('')}</ul>
+<p id="search-none" hidden>Nothing found. Try "ladder", "padel", "biscuits" or "Keith". Or have a look at the <a href="${url('/')}">home page</a>.</p>
+<script>(function(){var q=(new URLSearchParams(location.search).get('q')||'').trim(),f=document.querySelector('.navbar input[type=search]');if(f)f.value=q;if(!q)return;var w=q.toLowerCase().split(/\\s+/),n=0;document.querySelectorAll('.search-results li').forEach(function(li){var ok=w.every(function(t){return li.dataset.s.indexOf(t)>-1});li.hidden=!ok;if(ok)n++});var m=document.getElementById('search-msg');m.textContent='';m.append('Showing '+n+' post'+(n==1?'':'s')+' matching ');var b=document.createElement('b');b.textContent=q;m.append(b,'. ');var a=document.createElement('a');a.href=${JSON.stringify(url('/search/'))};a.textContent='Show all posts';m.append(a);document.getElementById('search-none').hidden=n>0})()</script>`,
+}), { sitemap: false });
 
 // 404
 write('/404.html', layout({

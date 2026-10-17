@@ -36,7 +36,7 @@ Reserves. Someone will cancel at 6.58pm from the car park because they've "just 
 
 Our padel lot do the same on Sundays and the new pickleball group in the sports hall pinched it too, it works for all of them.
 
-We run ours through Rallio now and it does the courts for me (and, yes, it spreads the good ones out, I made sure Jake made it do that), and when someone cancels the next reserve gets told automatically so I'm not ringing round from the car park. But you can absolutely do it with paper. I did for years.
+We run ours through [Rallio](https://rallio.io/mixers/) now and it does the courts for me (and, yes, it spreads the good ones out, I made sure Jake made it do that), and when someone cancels the next reserve gets told automatically so I'm not ringing round from the car park. But you can absolutely do it with paper. I did for years.
 
 Just spread the good ones out. Please. For everyone's sake.
 

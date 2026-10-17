@@ -30,7 +30,7 @@ All three of those are the same problem really, which is that all of it lives in
 
 The thing that fixed it, honestly, was making the list public. That's the big one. The minute "who's coming?" is a private question in my DMs I've lost. Now there's one list, everyone can see it, people put themselves on and take themselves off, reserves are on the same list underneath, and when someone drops out the next one moves up. I don't decide. I don't phone anyone. It just moves.
 
-We do it through the app Jake built (Rallio) and it also does the first go at the courts for me, which I can fiddle with. I didn't realise how much of my week was the blank page, just staring at thirteen names going "right, who goes where". Now it's "does this look ok" and nine times out of ten it does.
+We do it through the app Jake built ([Rallio](https://rallio.io/mixers/)) and it also does the first go at the courts for me, which I can fiddle with. I didn't realise how much of my week was the blank page, just staring at thirteen names going "right, who goes where". Now it's "does this look ok" and nine times out of ten it does.
 
 We're about thirty on a Thursday now. I'm still me. I've just stopped being the thing everything has to go through.
 

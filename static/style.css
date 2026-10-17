@@ -101,6 +101,13 @@ img{max-width:100%;height:auto}
 .badge b{display:inline-block;padding:3px 4px;background:#f60;color:#fff}
 .badge i{display:inline-block;padding:3px 4px;background:#eee;color:#333;font-style:normal}
 
+.store{display:inline-block;margin:3px 0;padding:4px 9px;background:#222;color:#fff!important;border-radius:5px;font:bold 12px/1.3 "Trebuchet MS",sans-serif;text-decoration:none}
+.store:hover{background:#3b5323}
+a.followers{text-decoration:none}
+.post-footer .share a{white-space:nowrap}
+.search-results{list-style:none;padding:0;margin:0}
+.search-results li{margin:0 0 16px;padding-bottom:12px;border-bottom:1px dotted #ccc}
+.search-results li a{font-size:18px}
 .footer{clear:both;margin:0 10px 10px;padding:16px;border-top:1px dashed #b9be9c;text-align:center;font:12px/1.6 "Trebuchet MS",Verdana,sans-serif;color:#888}
 .footer p{margin:4px 0}
 .status-msg{margin:16px 0;padding:8px 12px;background:#f4f4ec;border:1px solid #e3e3d3;font:13px "Trebuchet MS",sans-serif}

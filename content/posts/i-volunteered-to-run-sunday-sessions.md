@@ -30,7 +30,7 @@ The club has a booking system, naturally. It cost a great deal of money and it c
 
 So after the christening I spent several evenings looking at apps, and I will save the next poor volunteer the trouble. Most of them are booking and payments for the people who run the business. You want one that's for the people running the play. Something that takes sign-ups and keeps a reserve list ON ITS OWN and moves the next person up when someone drops out, without me. Something that does the pairings so they're fair. Something that works for squash and tennis and the rest (the table tennis section will want in, trust me). And above all something people can join WITHOUT a password, because half my Sunday regulars would sooner give up squash than create a password.
 
-Bev pointed me at the one Jake built for our club, Rallio. It does all of that. It took me fifteen minutes to set up, though I was also making toast.
+Bev pointed me at the one Jake built for our club, [Rallio](https://rallio.io/for-groups/). It does all of that. It took me fifteen minutes to set up, though I was also making toast.
 
 The first Sunday a reserve moved up on its own I was, as it happens, in church again. I have never been so moved in church.
 

@@ -30,7 +30,7 @@ I nearly didn't go back. Genuinely. I'd been going to tell my friend padel wasn'
 
 Graham (he writes on here, he's very good at explaining things over a pint) says most people at a club are somewhere in the middle and the people at the edges, beginners like me and the really good ones, have the worst time if nobody thinks about who plays who. Which makes sense. The good players don't want my 46 sorries either. They want a proper game.
 
-Our club just turned on levels in the app they use for sessions (it's called Rallio). You can put in a rating if you've got one, which I don't, or the club puts you in one of its groups, which are called things like "Improvers" and "Thursday Group 2" which made me laugh. And then when Bev does the draw she can actually see who's who and not stick me on court two of doom. It moves as you play too, and apparently socials only count half so one terrible Tuesday doesn't wreck you. Good. Because Tuesday was terrible.
+Our club just turned on levels in the app they use for sessions (it's called [Rallio](https://rallio.io/features/)). You can put in a rating if you've got one, which I don't, or the club puts you in one of its groups, which are called things like "Improvers" and "Thursday Group 2" which made me laugh. And then when Bev does the draw she can actually see who's who and not stick me on court two of doom. It moves as you play too, and apparently socials only count half so one terrible Tuesday doesn't wreck you. Good. Because Tuesday was terrible.
 
 Anyway. Nobody should have to say sorry 46 times at something called a SOCIAL.
 

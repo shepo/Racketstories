@@ -34,7 +34,7 @@ Write the scoring down. One set? Best of three? Tiebreak? You'd think people wou
 
 Half the committee wanted a box league instead and we spent a whole meeting on it (Graham minuted it, four pages). Short version as I understand it: box league = small groups, everyone plays everyone in a few weeks, guaranteed games, but way more organising and you can't really join halfway through. Ladder = play when you like, join when you like, but lazy people can sit on a spot (PHIL). We went ladder. I'd still go ladder.
 
-We moved it onto Rallio in April and the bit I care about is the table now just moves on its own when someone puts a score in. Challenges that nobody answers expire on their own. I'm not doing it at weddings any more. That's genuinely all I wanted.
+We moved it onto [Rallio](https://rallio.io/ladders/) in April and the bit I care about is the table now just moves on its own when someone puts a score in. Challenges that nobody answers expire on their own. I'm not doing it at weddings any more. That's genuinely all I wanted.
 
 Anyway. It was not just a spreadsheet. Don't say it's just a spreadsheet.
 
