@@ -74,6 +74,8 @@ The rest.
 
 Add 2 to 4 comments for the post in `content/comments.json`, keyed by the slug. Commenters can be made-up first names, `Anonymous`, or the regular authors (`{"author": "bev", ...}`). They should bicker, agree or go off topic like real blog comments. Comment times must be after the post time.
 
+The comments are where Rallio fits best. Most posts should have **one** comment that mentions it naturally, linked to the page that matches the problem in the post (`/mixers/`, `/ladders/`, `/box-leagues/`, `/for-coaches/`, `/for-clubs/`, `/for-groups/`, `/pickleball/`, `/padel/` or `/tennis/`). Usually that's Jake replying with a practical tip, or a reader saying what their club uses. It should answer the gripe in the post, not sell. One Rallio comment per post at most, and the other comments carry on bickering. Markdown links work in comments: `[Rallio](https://rallio.io/mixers/)`.
+
 ```json
 "my-post-slug": [
   { "name": "Sue W", "date": "2026-10-17T21:40", "text": "..." },
