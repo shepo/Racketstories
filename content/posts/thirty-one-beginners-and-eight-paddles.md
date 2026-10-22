@@ -34,10 +34,8 @@ Terry walked past at half two with his ball basket and said "told you" and kept 
 
 And it was BRILLIANT. That's the thing. Thirty-one people who've never held a paddle, hitting a plastic ball with holes in it, in the cold, sharing eight paddles and two ping pong bats, and nobody left early. Not one. The walking group stayed until it got dark. Doreen, who is 79, asked when the next one is. Three people asked where you BUY a paddle.
 
-So I'm doing it again in two weeks. And this time I'm going to ask people to say they're coming, which I should have done the first time, I know, I KNOW. Bev says just put a sign-up sheet in the clubhouse. Jake says use [a sign-up link](https://rallio.io/mixers/) and let it sort out who sits out. Terry says don't do it at all.
+So I'm doing it again in two weeks. And EVERYONE can come. All thirty-one, and Doreen's friends, and the walking group's other walking group. I'm not turning a single person away. I just need to know how many are coming so I can book more than one court, which I should have done the first time, I know, I KNOW. Bev says put a sign-up sheet in the clubhouse. Jake says use [a sign-up link](https://rallio.io/mixers/) and let it sort out the rotations. Terry says don't do it at all.
 
-But mostly I need paddles. If you have one in a cupboard, a loft, a garage, a car boot, BRING IT. We had eight paddles and thirty-one people and I will not be doing that again.
-
-Actually I probably will. It was the best Sunday I've had all year!!
+But mostly I need paddles. If you have one in a cupboard, a loft, a garage, a car boot, BRING IT. We had eight paddles and thirty-one people and it was the best Sunday I've had all year!! Imagine it with twenty paddles.
 
 P.S. If you took the orange paddle with the tape on the handle home by accident, that's my good one. No questions asked. Leave it at the bar.
