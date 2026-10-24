@@ -14,7 +14,7 @@ The stories are the posts from the Rallio blog, rewritten as personal first-pers
 - URLs follow the Blogspot pattern, minus the `.html`: `/2026/10/post-slug`, `/search/label/padel/`, `/2026/10/`, `/p/about` and `/profile/bev`.
 
 ```bash
-npm run build                      # writes dist/ (SITE_URL defaults to https://racketstories.com)
+npm run build                      # writes dist/ and runs the security check (SITE_URL defaults to https://racketstories.com)
 SITE_URL=http://localhost:8080 npm run serve   # build and preview at localhost:8080 (Cloudflare-style URLs)
 ```
 
@@ -51,7 +51,8 @@ To add photos, put full-size JPEGs in a folder and run `scripts/optimise-images.
 The site is hosted on **Cloudflare Workers** (static assets only, no Worker code) at **https://racketstories.com**.
 
 - `wrangler.jsonc` points Cloudflare at `dist/`, attaches the `racketstories.com` custom domain, serves `dist/404.html` for unknown URLs, and serves `a/b.html` at `/a/b`. That is why pages are linked without `.html`.
-- `static/_headers` (copied to `dist/_headers`) adds security headers and caching for images.
+- `build.mjs` writes `dist/_headers`: a Content Security Policy that only lets the build's own inline scripts run (by hash) and loads nothing from other sites, plus HSTS, `X-Frame-Options`, `nosniff`, `Referrer-Policy`, `Permissions-Policy` and image caching. PR preview builds (any `WORKERS_CI_BRANCH` other than `master`) also get `X-Robots-Tag: noindex` and a `Disallow: /` robots.txt, so drafts stay out of Google.
+- `npm run build` runs `scripts/security-check.mjs` after the build: headers and CSP, no inline handlers or `javascript:` links, nothing external, `rel=noopener` on outbound links, no broken internal links, no secrets. A failure stops the Cloudflare deploy. `/pentest` (`.claude/skills/pentest/SKILL.md`) is the fuller review for code changes.
 - The repo is connected to the Worker through **Workers Builds**. Every push to `master` runs `npm run build` and then `npx wrangler deploy`. Other branches (every PR) run `npx wrangler preview` and get a preview link on the PR. Previews need the `previews` block in `wrangler.jsonc` and Wrangler 4.135+, which is pinned in `package.json`.
 - `SITE_URL` defaults to `https://racketstories.com`, so canonicals, the feed, the sitemap and `robots.txt` use it.
 
