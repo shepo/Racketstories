@@ -76,5 +76,10 @@
     "contact": "https://rallio.io/contact/",
     "home": "https://rallio.io/",
     "facebook": "https://www.facebook.com/groups/2578495509243593/"
+  },
+  "posthog": {
+    "token": "phc_kzNjJ9BvLSoSsTmAkW32BWG6HY6UZdwXwxa7b6EPzveF",
+    "host": "https://eu.i.posthog.com",
+    "assets": "https://eu-assets.i.posthog.com"
   }
 }

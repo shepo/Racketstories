@@ -10,6 +10,10 @@ We'd rather you knew this up front.
 - **Everyone else is a composite.** That's Bev, Dan, Priya, Graham, and the coaches and club chair who write here too (Coach Terry, Coach Mel and Malcolm). Each one is stitched together from real people and real things that happened at real clubs (we've all met a Keith). Names and details are changed so nobody's mum recognises them, and so we can be rude about the booking system without getting a letter from the committee.
 - **The stories started life as articles on the Rallio blog.** We've retold them the way they actually felt from the court, the clubhouse and the car park.
 
+## Counting visitors
+
+We count visits with [PostHog](https://posthog.com), hosted in the EU, so we can see which stories people read and which links they click. Unless you say yes to cookies, it runs without them and stores nothing on your device. There's no tracking across other sites, no ads and no recordings of what you do on the page. The details are on the [privacy](/p/privacy) and [cookies](/p/cookies) pages.
+
 ## Getting around
 
 There isn't really a menu, sorry. It's that kind of blog. Use the *Blog Archive* and *Labels* on the right, the "Older Posts" link at the bottom of the page, or the search box at the very top. Feeling brave? Click "Next Blog»" and see where you end up.
