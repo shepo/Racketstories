@@ -132,7 +132,18 @@ table.plain{border-collapse:collapse;width:100%;margin:10px 0;font-size:12px}
 table.plain th,table.plain td{border:1px solid #ccc;padding:4px 6px;text-align:left;vertical-align:top}
 table.plain th{background:#eef}
 
-/* cookie bar: a bit 2008 on purpose */
-.cookie-bar{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:8px 12px;background:#ffffcc;border-top:2px solid #e0d080;font:12px/1.5 Verdana,sans-serif;color:#333;text-align:center}
+/* cookie banner: deliberately normal, unlike the rest of the site */
+.cookie-bar{position:fixed;left:0;right:0;bottom:0;z-index:1000;background:#fff;color:#1f2328;border-top:1px solid #d0d7de;box-shadow:0 -4px 16px rgba(0,0,0,.12);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;text-align:left}
 .cookie-bar[hidden]{display:none}
-.cookie-bar button,#cookie-settings{font:12px Verdana,sans-serif;margin:2px 4px;padding:2px 8px;cursor:pointer}
+.cookie-inner{max-width:1040px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:24px}
+.cookie-text{flex:1}
+.cookie-text p{margin:0}
+.cookie-text .cookie-title{font-weight:600;font-size:15px;margin-bottom:4px}
+.cookie-text a{color:#0969da;white-space:nowrap}
+.cookie-actions{display:flex;gap:8px;flex-shrink:0}
+.cookie-btn{font:inherit;font-weight:600;min-width:110px;padding:9px 18px;border-radius:6px;cursor:pointer;border:1px solid #1f2328}
+.cookie-btn-primary{background:#1f2328;color:#fff}
+.cookie-btn-secondary{background:#fff;color:#1f2328}
+.cookie-btn:focus-visible{outline:3px solid #0969da;outline-offset:2px}
+@media (max-width:640px){.cookie-inner{flex-direction:column;align-items:stretch;gap:12px;padding:14px 16px}.cookie-actions .cookie-btn{flex:1}}
+#cookie-settings{font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:600;padding:8px 16px;border-radius:6px;border:1px solid #1f2328;background:#fff;cursor:pointer}
