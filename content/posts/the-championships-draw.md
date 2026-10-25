@@ -1,51 +1,31 @@
 ---
-title: The club championships draw. A report to members.
+title: Twenty-three names and thirty-two lines
 date: 2026-10-24T21:20
 author: malcolm
 labels: Tennis, Committee, Club life
-description: The club chair reports on the making of this year's club championships draw, which took three hours, two pens and one tea towel, and is still wrong.
+description: A club chair on the annual ritual of doing the championships draw by hand, why it always takes all evening, and why it always comes out wrong.
 image: organiser-desk
 imageAlt: Cartoon of a flustered tennis competition organiser scratching their head behind a desk with a clipboard
 ---
 
-The draw for this year's club championships was made on Thursday evening in the bar.
+I have done the club championships draw at three clubs now, over something like twenty years, and I have come to the conclusion that it is the same evening every time. Only the room changes.
 
-It took three hours.
+It goes like this. Somebody has a list of entries on a sheet of A4 that has been on the noticeboard since August and has a coffee ring on it. Somebody else has a pen. There is always one more person in the room than is useful, and it is usually me.
 
-It is wrong.
-
-![Organiser at a desk](organiser-desk "Not me. I don't have that much hair. The expression is accurate.")
+![Organiser at a desk](organiser-desk "Not me. I don't have that much hair. The expression is accurate though.")
 
 <!--more-->
 
-For those who weren't there, which was most of you, I will explain.
+This year it was 23 entries in the men's singles. If you've never done a draw, the thing nobody tells you is that a knockout only works in powers of two. Sixteen is lovely. Thirty-two is lovely. Twenty-three means 32 lines with nine byes, and nine byes is where the evening goes.
 
-We had 23 entries for the men's singles. Twenty-three is not a number a knockout draw enjoys. You need 32 lines. That means nine byes. Nine people get through the first round without hitting a ball, and the other fourteen have to work out whether they mind.
+Because the byes have to go somewhere, and wherever they go somebody gets a week off and somebody else doesn't. The convention is they go to the seeds, which means you first have to agree who the seeds are, and that is a conversation that cannot be had quickly by anyone who has ever lost to anyone. Last year's results, says one person. Last year's winner has moved away, says another. Last year's results anyway, says the first. I have heard this exact exchange in three different counties.
 
-They mind.
+Then the names go into something. A hat if you're organised. A pint glass if you're not. One year it was a biscuit tin and we spent ten minutes deciding whether the shortbread counted as an entry.
 
-The committee agreed the byes would go to the seeds. We then spent forty minutes agreeing who the seeds were. Graham proposed going on last year's results. It was pointed out that last year's winner has moved to Devon. Graham proposed going on last year's results anyway.
+And you draw them, one by one, and write them in, and everyone watches, and it all feels very fair and democratic, right up until somebody leans over at about twenty to eleven and says, quite gently, that all the byes seem to be in the top half.
 
-The draw itself was done with names on folded bits of paper in an ice bucket. The ice bucket was not empty. Several names were damp. One was illegible and we think it was Kevin, but it may have been Keith. We have put Keith in. Kevin, if you are reading this, you may be playing as Keith.
+They always are. Or near enough. Nobody does it on purpose. It's just that three sensible adults with a pen and a hat will, without fail, produce a draw that a computer would be embarrassed by. The top half gets a week off. The bottom half plays a full first round. And by twenty to eleven nobody wants to start again, so it goes on the noticeboard, and for the next month the bottom half quietly hates the top half.
 
-Points raised during the evening:
+I don't think it's anyone's fault. I think it's what happens when you do sums in a bar. I'm told there are better ways now. I'm told that most years, round about February, when the first-round matches are still being "arranged".
 
-1. Whether byes should be spread across both halves of the draw
-2. Whether that was what we had done
-3. Whether anyone had a ruler
-
-The answers were yes, no, and a tea towel.
-
-When we finished, all nine byes were in the top half. The bottom half is fourteen people playing each other in the first round while the top half has a week off. Priya noticed this at 10.40pm. We decided it was too late to start again. Priya disagreed. Priya was right. It is now on the noticeboard.
-
-Also Dennis is playing Dennis. There are two Dennises. That is fine. They are different Dennises. I have checked.
-
-I want to be clear that nobody did anything wrong. Three reasonable adults spent three hours in a bar putting 23 names into 32 lines, and ended up with a draw that would not pass a GCSE maths paper. This happens every year. I have the minutes from 2019, 2022 and 2024 to prove it.
-
-Next year the draw will be done differently. I don't yet know how. Possibly sober.
-
-First round matches to be played by 15 November. Results to Graham, who has a spreadsheet, which is a separate concern.
-
-Malcolm, Chair
-
-P.S. The ice bucket has been returned to the bar. Rita would like it known that it is for ice.
+Next year I've said we'll do it differently. I said that last year as well. I'll probably say it in the bar, with a pen in my hand.
