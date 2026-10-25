@@ -36,8 +36,10 @@ Don't repeat a topic already on the blog. Skim the titles in `content/posts/` be
 
 - **Unpolished.** It reads like a real person typed it in one go. No neat structure, no "Step 1, Step 2", no tidy conclusion. At most one or two headings, usually none.
 - **One point, hammered.** Say it at the start, wander off, come back to it, say it again at the end.
-- **Specific and petty.** Names (first names only, made up), times, court numbers, prices, weather.
-- British English. 300 to 600 words. Contractions. Some fragments. Some CAPITALS for Mel. A **P.S.** is good.
+- **Write for a stranger at another club.** The reader is someone who has never been to our club. They should recognise their own club in it and think "that's us", not feel they've walked into someone else's committee meeting. No notices to members, no "for those who weren't there", and no jokes that only work if you know the regulars. Talk about what happens at clubs ("every club I've been at…", "if you've ever run a…").
+- **Specific and petty.** Times, numbers, prices, weather, the biscuit tin. A made-up first name now and then is fine, but don't build a cast list of club members the reader is expected to know.
+- **Change the shape every time.** Read the last two or three posts first and don't reuse their structure: minutes, numbered lists, one-line paragraphs, a sign-off, a P.S. The mood (moaning, enthusiastic, dry) is a tone, not a template. Malcolm can be dry in one long ramble. Terry can moan in a list. Mel can be excited in a letter.
+- British English. 300 to 600 words. Contractions. Some fragments. Some CAPITALS for Mel. A **P.S.** now and then, not every time.
 - No em dashes. No "delve", "navigate", "landscape", "game-changer", "in today's world" or "it's worth noting". No moral-of-the-story ending.
 - **Rallio:** only mention it when it naturally fits, at most once, in passing, linked to the most relevant page (`https://rallio.io/mixers/`, `/ladders/`, `/box-leagues/`, `/for-clubs/`, `/for-groups/`, `/for-coaches/`, `/features/`, `/padel/`, `/pickleball/`, `/tennis/`). Plenty of posts shouldn't mention it at all.
 - Never name real clubs, real coaches or real people (except Jake).
@@ -72,7 +74,7 @@ The rest.
 
 ## Comments
 
-Add 2 to 4 comments for the post in `content/comments.json`, keyed by the slug. Commenters can be made-up first names, `Anonymous`, or the regular authors (`{"author": "bev", ...}`). They should bicker, agree or go off topic like real blog comments. Comment times must be after the post time.
+Add 2 to 4 comments for the post in `content/comments.json`, keyed by the slug. Commenters can be made-up first names, `Anonymous`, or the regular authors (`{"author": "bev", ...}`). They should bicker, agree or go off topic like real blog comments. Mix in readers from other clubs ("Sarah, club captain", "Anonymous"), so it doesn't read like the same six people talking to each other. Comment times must be after the post time.
 
 The comments are where Rallio fits best. Most posts should have **one** comment that mentions it naturally, linked to the page that matches the problem in the post (`/mixers/`, `/ladders/`, `/box-leagues/`, `/for-coaches/`, `/for-clubs/`, `/for-groups/`, `/pickleball/`, `/padel/` or `/tennis/`). Usually that's Jake replying with a practical tip, or a reader saying what their club uses. It should answer the gripe in the post, not sell. One Rallio comment per post at most, and the other comments carry on bickering. Markdown links work in comments: `[Rallio](https://rallio.io/mixers/)`.
 
