@@ -12,7 +12,7 @@ We'd rather you knew this up front.
 
 ## Counting visitors
 
-We count visits with [PostHog](https://posthog.com), hosted in the EU, so we can see which stories people read and which links they click. It runs without cookies and doesn't store anything in your browser, which is why there's no cookie banner. There's no tracking across other sites, no ads and no recordings of what you do on the page.
+We count visits with [PostHog](https://posthog.com), hosted in the EU, so we can see which stories people read and which links they click. Unless you say yes to cookies, it runs without them and stores nothing on your device. There's no tracking across other sites, no ads and no recordings of what you do on the page. The details are on the [privacy](/p/privacy) and [cookies](/p/cookies) pages.
 
 ## Getting around
 

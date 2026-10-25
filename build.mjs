@@ -115,6 +115,11 @@ function markdown(src, { eagerFirstImage = false } = {}) {
     }
     if (b.startsWith('<')) return b;
     if (b === '---') return '<hr>';
+    if (/^\|.*\|\s*\n\|[-|: ]+\|/.test(b)) {
+      const cells = (row) => row.trim().replace(/^\||\|$/g, '').split('|').map((c) => inline(c.trim()));
+      const [head, , ...rows] = b.split('\n');
+      return `<table class="plain"><thead><tr>${cells(head).map((c) => `<th>${c}</th>`).join('')}</tr></thead><tbody>${rows.map((r) => `<tr>${cells(r).map((c) => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    }
     if ((m = /^(#{2,3})\s+(.*)$/.exec(b))) return `<h${m[1].length}>${inline(m[2])}</h${m[1].length}>`;
     if (/^[-*] /.test(b)) return `<ul>${b.split(/\n(?=[-*] )/).map((li) => `<li>${inline(li.replace(/^[-*] /, '').replace(/\n\s*/g, ' '))}</li>`).join('')}</ul>`;
     if (/^\d+\. /.test(b)) return `<ol>${b.split(/\n(?=\d+\. )/).map((li) => `<li>${inline(li.replace(/^\d+\. /, '').replace(/\n\s*/g, ' '))}</li>`).join('')}</ol>`;
@@ -223,7 +228,12 @@ const inlineScript = (code) => (ownScripts.add(code), `<script>${code}</script>`
 // PostHog (EU cloud), cookieless: nothing is stored in the browser, so there's no cookie banner. No session
 // recording or surveys. The standard loader stub; it fetches array.js from the assets host (allowed in the CSP).
 const ph = site.posthog;
-const analyticsScript = ANALYTICS ? inlineScript(`!function(t,e){var o,n,p,r;e.__SV||(window.posthog&&window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(${JSON.stringify(ph.token)},{api_host:${JSON.stringify(ph.host)},cookieless_mode:"always",person_profiles:"identified_only",disable_session_recording:true,disable_surveys:true});`) : '';
+const analyticsScript = ANALYTICS ? inlineScript(`!function(t,e){var o,n,p,r;e.__SV||(window.posthog&&window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);(function(){var c=null;try{c=localStorage.getItem("rs_cookies")}catch(e){}var o={api_host:${JSON.stringify(ph.host)},person_profiles:"identified_only",disable_session_recording:true,disable_surveys:true};if(c==="yes")o.persistence="localStorage+cookie";else o.cookieless_mode="always";posthog.init(${JSON.stringify(ph.token)},o)})();`) : '';
+// The cookie bar: shown until the reader picks yes or no. The choice is kept in localStorage (rs_cookies) and
+// applies from the next page. Saying no deletes any PostHog ID left from an earlier yes. #cookie-settings (on the
+// cookie page) brings the bar back.
+const cookieBar = ANALYTICS ? `<div class="cookie-bar" id="cookie-bar" hidden><b>Cookies?</b> We count visits without them. Say yes and PostHog adds one anonymous ID, so we can tell when you come back. No ads, no tracking across other sites. <button type="button" id="cookie-yes">Go on then</button> <button type="button" id="cookie-no">No thanks</button> <a href="${url('/p/cookies')}">What's this?</a></div>
+${inlineScript(`(function(){var b=document.getElementById("cookie-bar"),k="rs_cookies",c=null;if(!b)return;try{c=localStorage.getItem(k)}catch(e){}function clearPh(){try{window.posthog&&posthog.set_config&&posthog.set_config({persistence:"memory"})}catch(e){}var h=location.hostname,ds=["","; domain="+h,"; domain=."+h,"; domain=."+h.split(".").slice(-2).join(".")];document.cookie.split(";").forEach(function(x){var n=x.split("=")[0].trim();if(n.indexOf("ph_")===0)ds.forEach(function(d){document.cookie=n+"=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/"+d})});try{Object.keys(localStorage).forEach(function(n){if(n.indexOf("ph_")===0)localStorage.removeItem(n)})}catch(e){}}function pick(v){try{localStorage.setItem(k,v)}catch(e){}if(v==="no")clearPh();b.hidden=true}if(!c)b.hidden=false;document.getElementById("cookie-yes").onclick=function(){pick("yes")};document.getElementById("cookie-no").onclick=function(){pick("no")};var s=document.getElementById("cookie-settings");if(s)s.onclick=function(e){e.preventDefault();b.hidden=false;b.scrollIntoView&&b.scrollIntoView()}})();`)}` : '';
 const randomScript = inlineScript(`document.getElementById('nb').onclick=function(e){var u=${JSON.stringify(posts.map((p) => url(p.path)))};e.preventDefault();location.href=u[Math.floor(Math.random()*u.length)]}`);
 
 function layout({ title, description, pathName, body, open, ogImage, ogType = 'website', jsonld = [], noindex = false }) {
@@ -274,8 +284,10 @@ ${sidebar(open)}
 <p>&copy; ${posts[0].t.y} ${esc(site.title)}. Theme nicked from about 2008 and lovingly not updated since.</p>
 <p>Stories from real club life. Everyone here except Jake is a composite character; Jake is real and built <a href="https://rallio.io" rel="noopener">Rallio</a>, which some of these stories mention. <a href="${url('/p/about')}">More on that here</a>.</p>
 <p><a href="${esc(site.links.facebook)}" rel="noopener">Join the Facebook group</a> &middot; <a href="${esc(site.links.contact)}" rel="noopener">Contact</a> &middot; <a href="${esc(site.links.appStore)}" rel="noopener">Rallio on the App Store</a> &middot; <a href="${esc(site.links.googlePlay)}" rel="noopener">Rallio on Google Play</a> &middot; <a href="${url('/feeds/posts/default.xml')}">Atom feed</a> &middot; <a href="${url('/sitemap.xml')}">Sitemap</a></p>
+<p><a href="${url('/p/privacy')}">Privacy</a> &middot; <a href="${url('/p/cookies')}">Cookies</a></p>
 </footer>
 </div>
+${cookieBar}
 ${randomScript}
 </body>
 </html>
@@ -478,6 +490,17 @@ write('/p/about', layout({
   body: `<article class="post"><h1 class="post-title">About Racket Stories</h1><div class="post-body">${markdown(aboutMd)}
 <h2>The gang</h2><ul>${Object.entries(authors).map(([k, a]) => `<li><a href="${url(authorPath(k))}">${esc(a.display)}</a> &ndash; ${esc(a.short)}</li>`).join('')}</ul></div></article>`,
 }));
+
+// privacy + cookies
+for (const [slug, title, description, extra] of [
+  ['privacy', 'Privacy', 'What Racket Stories collects when you visit (page views and clicks, counted with PostHog), why, who sees it and your rights.', ''],
+  ['cookies', 'Cookies', 'Exactly what Racket Stories stores in your browser, when, and how to change your mind.', ANALYTICS ? '<p><button type="button" id="cookie-settings">Change my cookie choice</button></p>' : ''],
+]) {
+  write(`/p/${slug}`, layout({
+    title, description, pathName: `/p/${slug}`, open: posts[0].t,
+    body: `<article class="post"><h1 class="post-title">${esc(title)}</h1><div class="post-body">${markdown(fs.readFileSync(path.join(ROOT, `content/${slug}.md`), 'utf8'))}${extra}</div></article>`,
+  }));
+}
 
 // search (the toolbar box submits here; filtering is done in the browser)
 write('/search/', layout({
