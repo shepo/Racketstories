@@ -87,7 +87,7 @@ The comments are where Rallio fits best. Most posts should have **one** comment 
 
 ## Before opening the PR
 
-1. `node build.mjs` must succeed.
-2. Run a link check: every internal `href`/`src` in `dist/` must resolve. `/a/b` maps to `dist/a/b.html`, and `/a/` maps to `dist/a/index.html`.
+1. `npm run build` must succeed. It builds the site and runs `scripts/security-check.mjs`, which checks every internal link resolves and that nothing unsafe got in (raw `<script>`, `javascript:` links, external images or embeds).
+2. Don't put raw HTML in a post. Plain markdown only.
 3. Re-read the post out loud in your head. If it sounds like an article, rough it up.
 4. Commit on a branch called `claude/post-YYYY-MM-DD` and open a **draft PR** against `master`. The title is the post title and the body has a 2-line summary (author, mood, topic). Never merge it: Jake reviews and merges.

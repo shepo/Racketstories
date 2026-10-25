@@ -5,11 +5,14 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, 'dist');
 const SITE_URL = (process.env.SITE_URL || 'https://racketstories.com').replace(/\/$/, '');
 const BASE = new URL(SITE_URL).pathname.replace(/\/$/, '');
+// Workers Builds sets WORKERS_CI_BRANCH. Any branch but master is a PR preview on *.workers.dev: keep it out of search engines.
+const PREVIEW = !!process.env.WORKERS_CI_BRANCH && process.env.WORKERS_CI_BRANCH !== 'master';
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const site = readJSON('content/site.json');
@@ -86,6 +89,8 @@ function inline(s) {
     .replace(/`([^`]+)`/g, (_, c) => `<code>${esc(c)}</code>`)
     .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, h) => {
       const ext = /^https?:/.test(h);
+      // Only web links, site paths and #anchors. Anything else (javascript:, data:) is a mistake or an attack.
+      if (!ext && !/^[/#]/.test(h)) throw new Error(`Link with an unsupported scheme: ${h}`);
       const href = ext ? h : (h.startsWith('/') ? url(h) : h);
       return `<a href="${esc(href)}"${ext ? ' rel="noopener"' : ''}>${t}</a>`;
     })
@@ -209,7 +214,10 @@ function sidebar(open) {
 // ---------- layout ----------
 const css = fs.readFileSync(path.join(ROOT, 'static/style.css'), 'utf8')
   .replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s*\n\s*/g, '').replace(/\s*([{};,>])\s*/g, '$1').replace(/;}/g, '}');
-const randomScript = `<script>document.getElementById('nb').onclick=function(e){var u=${JSON.stringify(posts.map((p) => url(p.path)))};e.preventDefault();location.href=u[Math.floor(Math.random()*u.length)]}</script>`;
+// The only scripts allowed to run: each one goes through inlineScript(), which records it for the CSP hash.
+const ownScripts = new Set();
+const inlineScript = (code) => (ownScripts.add(code), `<script>${code}</script>`);
+const randomScript = inlineScript(`document.getElementById('nb').onclick=function(e){var u=${JSON.stringify(posts.map((p) => url(p.path)))};e.preventDefault();location.href=u[Math.floor(Math.random()*u.length)]}`);
 
 function layout({ title, description, pathName, body, open, ogImage, ogType = 'website', jsonld = [], noindex = false }) {
   const fullTitle = pathName === '/' ? `${site.title}: ${site.description.split('.')[0]}` : `${title} | ${site.title}`;
@@ -233,7 +241,7 @@ ${noindex ? '<meta name="robots" content="noindex,follow">' : `<link rel="canoni
 <meta property="og:url" content="${abs(pathName)}">
 <meta property="og:image" content="${og}">
 <meta name="twitter:card" content="summary_large_image">
-${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`).join('\n')}
+${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n')}
 <style>${css}</style>
 </head>
 <body>
@@ -470,7 +478,7 @@ write('/search/', layout({
   body: `<div class="status-msg" id="search-msg">Showing all ${posts.length} posts. Type something in the box at the top to narrow it down.</div>
 <ul class="search-results">${posts.map((p) => `<li data-s="${esc([p.title, p.description, p.labels.join(' '), authors[p.author].display, stripTags(p.html)].join(' ').toLowerCase())}"><a href="${url(p.path)}">${esc(p.title)}</a> <small>by ${esc(authors[p.author].display)}, ${p.t.d} ${MONTHS[p.t.mo - 1]} ${p.t.y}</small><br>${esc(p.description)}</li>`).join('')}</ul>
 <p id="search-none" hidden>Nothing found. Try "ladder", "padel", "biscuits" or "Keith". Or have a look at the <a href="${url('/')}">home page</a>.</p>
-<script>(function(){var q=(new URLSearchParams(location.search).get('q')||'').trim(),f=document.querySelector('.navbar input[type=search]');if(f)f.value=q;if(!q)return;var w=q.toLowerCase().split(/\\s+/),n=0;document.querySelectorAll('.search-results li').forEach(function(li){var ok=w.every(function(t){return li.dataset.s.indexOf(t)>-1});li.hidden=!ok;if(ok)n++});var m=document.getElementById('search-msg');m.textContent='';m.append('Showing '+n+' post'+(n==1?'':'s')+' matching ');var b=document.createElement('b');b.textContent=q;m.append(b,'. ');var a=document.createElement('a');a.href=${JSON.stringify(url('/search/'))};a.textContent='Show all posts';m.append(a);document.getElementById('search-none').hidden=n>0})()</script>`,
+${inlineScript(`(function(){var q=(new URLSearchParams(location.search).get('q')||'').trim(),f=document.querySelector('.navbar input[type=search]');if(f)f.value=q;if(!q)return;var w=q.toLowerCase().split(/\\s+/),n=0;document.querySelectorAll('.search-results li').forEach(function(li){var ok=w.every(function(t){return li.dataset.s.indexOf(t)>-1});li.hidden=!ok;if(ok)n++});var m=document.getElementById('search-msg');m.textContent='';m.append('Showing '+n+' post'+(n==1?'':'s')+' matching ');var b=document.createElement('b');b.textContent=q;m.append(b,'. ');var a=document.createElement('a');a.href=${JSON.stringify(url('/search/'))};a.textContent='Show all posts';m.append(a);document.getElementById('search-none').hidden=n>0})()`)}`,
 }), { sitemap: false });
 
 // 404
@@ -509,6 +517,27 @@ fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="U
 ${pages.map((p) => `<url><loc>${p.loc}</loc>${p.lastmod ? `<lastmod>${p.lastmod}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `);
-fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${abs('/sitemap.xml')}\n`);
+fs.writeFileSync(path.join(OUT, 'robots.txt'), PREVIEW ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\n\nSitemap: ${abs('/sitemap.xml')}\n`);
+
+// Security headers. The CSP allows only the build's own scripts (ownScripts), by hash, so a <script> that
+// sneaks into a post won't run (and scripts/security-check.mjs fails the build on it). Inline styles stay
+// allowed: the CSS and the avatar colours are inline.
+const scriptHashes = [...ownScripts].map((c) => `'sha256-${crypto.createHash('sha256').update(c).digest('base64')}'`).join(' ');
+const csp = `default-src 'none'; script-src ${scriptHashes}; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests`;
+fs.writeFileSync(path.join(OUT, '_headers'), `/*
+  Content-Security-Policy: ${csp}
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
+${PREVIEW ? '  X-Robots-Tag: noindex, nofollow\n' : ''}
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/favicon.svg
+  Cache-Control: public, max-age=604800
+`);
 
 console.log(`Built ${posts.length} posts, ${pages.length} indexable pages into dist/ for ${SITE_URL}`);

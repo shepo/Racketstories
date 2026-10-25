@@ -4,10 +4,11 @@
   "description": "Racket Stories: a hand-rolled, Blogspot-style static blog about club racket sports.",
   "type": "module",
   "scripts": {
-    "build": "node build.mjs",
-    "serve": "node build.mjs && node scripts/serve.mjs 8080",
-    "deploy": "node build.mjs && npx wrangler deploy",
-    "images": "scripts/optimise-images.sh"
+    "build": "node build.mjs && node scripts/security-check.mjs",
+    "serve": "npm run build && node scripts/serve.mjs 8080",
+    "deploy": "npm run build && npx wrangler deploy",
+    "images": "scripts/optimise-images.sh",
+    "check": "node scripts/security-check.mjs"
   },
   "engines": {
     "node": ">=18"
