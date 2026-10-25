@@ -11,6 +11,7 @@ The stories are the posts from the Rallio blog, rewritten as personal first-pers
 - Images are served as WebP at 400 and 800 pixels wide, with an 800-pixel JPEG fallback. Each one has a width and height set, and every image except the first is lazy-loaded.
 - For SEO the build adds a canonical URL, meta description, Open Graph and Twitter tags to every page. Posts carry `BlogPosting` and `BreadcrumbList` JSON-LD, the home page carries `WebSite` and `Blog`, and author pages carry `ProfilePage`. It also writes `sitemap.xml`, `robots.txt`, an Atom feed at `/feeds/posts/default.xml` and a 404 page.
 - Every outbound link to rallio.io gets UTM tags at build time (`utm_source=racketstories`, `utm_medium=referral`, `utm_campaign=blog`, `utm_content=<page>`, or `feed` in the Atom feed). Google Play links carry the same tags in their `referrer` parameter. Write plain Rallio links in posts and the build tags them.
+- Analytics: PostHog (EU cloud, project RacketStories), in cookieless mode, so nothing is stored in the browser and there's no cookie banner. Session recording and surveys are off. The token and hosts are in `content/site.json` (`posthog`). It's only added to Cloudflare's master build (`WORKERS_CI` set, not a preview), or a local build with `POSTHOG=1`, so previews and local builds send nothing. The CSP allows the two PostHog hosts and nothing else.
 - URLs follow the Blogspot pattern, minus the `.html`: `/2026/10/post-slug`, `/search/label/padel/`, `/2026/10/`, `/p/about` and `/profile/bev`.
 
 ```bash

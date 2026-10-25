@@ -13,6 +13,9 @@ const SITE_URL = (process.env.SITE_URL || 'https://racketstories.com').replace(/
 const BASE = new URL(SITE_URL).pathname.replace(/\/$/, '');
 // Workers Builds sets WORKERS_CI_BRANCH. Any branch but master is a PR preview on *.workers.dev: keep it out of search engines.
 const PREVIEW = !!process.env.WORKERS_CI_BRANCH && process.env.WORKERS_CI_BRANCH !== 'master';
+// PostHog runs on the live site only: Cloudflare's master build, or a local build with POSTHOG=1. Previews and
+// ordinary local builds send nothing.
+const ANALYTICS = process.env.POSTHOG === '1' || (!!process.env.WORKERS_CI && !PREVIEW);
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const site = readJSON('content/site.json');
@@ -217,6 +220,10 @@ const css = fs.readFileSync(path.join(ROOT, 'static/style.css'), 'utf8')
 // The only scripts allowed to run: each one goes through inlineScript(), which records it for the CSP hash.
 const ownScripts = new Set();
 const inlineScript = (code) => (ownScripts.add(code), `<script>${code}</script>`);
+// PostHog (EU cloud), cookieless: nothing is stored in the browser, so there's no cookie banner. No session
+// recording or surveys. The standard loader stub; it fetches array.js from the assets host (allowed in the CSP).
+const ph = site.posthog;
+const analyticsScript = ANALYTICS ? inlineScript(`!function(t,e){var o,n,p,r;e.__SV||(window.posthog&&window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(${JSON.stringify(ph.token)},{api_host:${JSON.stringify(ph.host)},cookieless_mode:"always",person_profiles:"identified_only",disable_session_recording:true,disable_surveys:true});`) : '';
 const randomScript = inlineScript(`document.getElementById('nb').onclick=function(e){var u=${JSON.stringify(posts.map((p) => url(p.path)))};e.preventDefault();location.href=u[Math.floor(Math.random()*u.length)]}`);
 
 function layout({ title, description, pathName, body, open, ogImage, ogType = 'website', jsonld = [], noindex = false }) {
@@ -242,6 +249,7 @@ ${noindex ? '<meta name="robots" content="noindex,follow">' : `<link rel="canoni
 <meta property="og:image" content="${og}">
 <meta name="twitter:card" content="summary_large_image">
 ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n')}
+${analyticsScript}
 <style>${css}</style>
 </head>
 <body>
@@ -523,7 +531,8 @@ fs.writeFileSync(path.join(OUT, 'robots.txt'), PREVIEW ? 'User-agent: *\nDisallo
 // sneaks into a post won't run (and scripts/security-check.mjs fails the build on it). Inline styles stay
 // allowed: the CSS and the avatar colours are inline.
 const scriptHashes = [...ownScripts].map((c) => `'sha256-${crypto.createHash('sha256').update(c).digest('base64')}'`).join(' ');
-const csp = `default-src 'none'; script-src ${scriptHashes}; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests`;
+const phOrigins = ANALYTICS ? ` ${ph.host} ${ph.assets}` : '';
+const csp = `default-src 'none'; script-src ${scriptHashes}${phOrigins}; connect-src 'self'${phOrigins}; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests`;
 fs.writeFileSync(path.join(OUT, '_headers'), `/*
   Content-Security-Policy: ${csp}
   X-Content-Type-Options: nosniff

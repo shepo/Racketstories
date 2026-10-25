@@ -11,6 +11,7 @@
 //   S6  no plain http:// links
 //   S7  every internal link and image resolves to a file in dist/
 //   S8  no secrets (API keys, tokens, private keys) in tracked files or dist/
+//   S9  the CSP names no other site except PostHog (content/site.json `posthog`)
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -41,6 +42,11 @@ for (const h of ['Content-Security-Policy:', 'X-Content-Type-Options: nosniff', 
 const csp = (/Content-Security-Policy: (.*)/.exec(headers) || [])[1] || '';
 for (const d of ["default-src 'none'", "frame-ancestors 'none'", "base-uri 'none'"]) if (!csp.includes(d)) fail('S1', '_headers', `CSP lacks ${d}`);
 if (/script-src[^;]*'unsafe-inline'/.test(csp)) fail('S1', '_headers', "CSP script-src allows 'unsafe-inline'");
+// S9: the only other site the CSP may name is PostHog (analytics), from content/site.json. Anything else is a new
+// external load and needs a deliberate change here.
+const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/site.json'), 'utf8'));
+const allowedOrigins = new Set([site.posthog?.host, site.posthog?.assets].filter(Boolean));
+for (const o of csp.match(/https?:\/\/[^\s;']+/g) || []) if (!allowedOrigins.has(o)) fail('S9', '_headers', `CSP allows an unexpected origin: ${o}`);
 
 let links = 0;
 for (const f of html) {
