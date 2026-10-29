@@ -28,7 +28,7 @@ Counting visits without cookies is in our legitimate interest in running the blo
 
 ## Who else sees it
 
-PostHog stores the data for us on its EU cloud, in Frankfurt. It processes it on our behalf and doesn't use it for anything of its own. Nobody else gets it. We don't sell it, share it with advertisers or use it to build profiles of people.
+PostHog stores the data for us on its EU cloud, in Frankfurt. The analytics travel through p.racketstories.com, an address of ours that passes them straight to PostHog, so you'll see that rather than posthog.com in your browser. PostHog processes the data on our behalf and doesn't use it for anything of its own. Nobody else gets it. We don't sell it, share it with advertisers or use it to build profiles of people.
 
 The site itself is hosted on Cloudflare, which, like any web host, handles your IP address to deliver the pages.
 
@@ -47,4 +47,4 @@ You can ask to see the data we hold about you, or ask us to correct or delete it
 
 ## Changes
 
-If we change how we count visits, we'll update this page. It was last updated on 25 October 2026.
+If we change how we count visits, we'll update this page. It was last updated on 29 October 2026.
