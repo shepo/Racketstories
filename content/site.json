@@ -79,7 +79,8 @@
   },
   "posthog": {
     "token": "phc_kzNjJ9BvLSoSsTmAkW32BWG6HY6UZdwXwxa7b6EPzveF",
-    "host": "https://eu.i.posthog.com",
-    "assets": "https://eu-assets.i.posthog.com"
+    "host": "https://p.racketstories.com",
+    "assets": "https://p.racketstories.com",
+    "ui": "https://eu.posthog.com"
   }
 }
