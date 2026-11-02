@@ -30,9 +30,9 @@ Pick **one** small, specific gripe, joy or observation about **tennis, picklebal
 - the WhatsApp group, the booking system, the waiting list
 - people who won't change partners at a social
 
-**Positions the blog takes.** Characters can grumble, but a post's point must never argue against these:
+**Positions the blog takes.**
 
-- Tennis and padel (and pickleball) should co-exist. Never argue for digging up or converting tennis courts to padel. Padel is mostly busy in the evenings and is noisy; tennis is played all day and all evening.
+- **Padel posts are pro padel.** The post itself takes padel's side: it brings new and younger people into clubs, it's easy to start, it's good for a club. The **comments push back** from the tennis side: padel is mostly busy only in the evenings while tennis is played all day and all evening, it's noisy, and no tennis court should be dug up for it. Never argue in a post for converting or removing tennis courts. Jake's view is that the two should co-exist.
 - Over-subscription is a nice problem: the answer is fitting everyone in (rotations, sit-outs, more sessions), never capping numbers.
 
 Don't repeat a topic already on the blog. Skim the titles in `content/posts/` before choosing.
