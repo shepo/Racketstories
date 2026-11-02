@@ -30,6 +30,11 @@ Pick **one** small, specific gripe, joy or observation about **tennis, picklebal
 - the WhatsApp group, the booking system, the waiting list
 - people who won't change partners at a social
 
+**Positions the blog takes.** Characters can grumble, but a post's point must never argue against these:
+
+- Tennis and padel (and pickleball) should co-exist. Never argue for digging up or converting tennis courts to padel. Padel is mostly busy in the evenings and is noisy; tennis is played all day and all evening.
+- Over-subscription is a nice problem: the answer is fitting everyone in (rotations, sit-outs, more sessions), never capping numbers.
+
 Don't repeat a topic already on the blog. Skim the titles in `content/posts/` before choosing.
 
 ## How it should read
