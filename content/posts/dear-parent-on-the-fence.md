@@ -16,11 +16,9 @@ Yes, you!! The one with the coffee and the big coat, holding the wire with both 
 
 <!--more-->
 
-I know it's not just you. Every club has one of you, sometimes four, and I've coached at enough of them to know you mean well. You love your kid. You've watched a lot of tennis on telly. And from behind the fence it all looks SO simple. Bend your knees. Watch the ball. Racket back early. Move your feet!! FEET!!
+You're not unique. Every sport has them, parents who are passionate and shouting from the sideline. But here's the thing. With football, your days of winning the golden boot may be behind you. But tennis? Tennis, come on, pick up a racket. I know you mean well. You love your kid. You've watched a lot of tennis on telly. And from behind the fence it all looks SO simple. Bend your knees. Watch the ball. Racket back early. Move your feet!! FEET!!
 
 Here's the thing though. I'm also saying "watch the ball". At the same time. From a different direction. And your daughter is ten and has one brain and two of us shouting at it, and the ball has gone past her while she worked out which of us to look at. Then she looks at you. Then she looks at me. Then she looks at her shoes. And that's the forehand gone for the morning.
-
-Last month a lad asked me, very quietly, between drills, if his dad could "go and get the car" during the next game. HE'S EIGHT. He's eight and he's working out how to get his dad off the fence. He's got a brilliant future in diplomacy, honestly, but I'd rather he had one in tennis.
 
 So here's my idea, and I've been dying to tell you!!
 
@@ -34,7 +32,4 @@ I'm not cross. I promise I'm not cross. I just think you'd have a much better Sa
 
 Come on to the court!!
 
-Love,
-Mel
-
-P.S. If you'd really rather watch, that's fine too. There's a lovely spot in the clubhouse window. You can see everything from there and nobody on court can hear a word you say.
+Love, Mel
