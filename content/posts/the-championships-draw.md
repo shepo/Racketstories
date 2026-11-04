@@ -29,3 +29,5 @@ They always are. Or near enough. Nobody does it on purpose. It's just that three
 I don't think it's anyone's fault. I think it's what happens when you do sums in a bar. I'm told there are better ways now. I'm told that most years, round about February, when the first-round matches are still being "arranged".
 
 Next year I've said we'll do it differently. I said that last year as well. I'll probably say it in the bar, with a pen in my hand.
+
+**Run this at your club:** [Run your tennis club championships](https://rallio.io/tennis/tournament/) with seeded draws from 2 to 128.

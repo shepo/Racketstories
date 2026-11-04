@@ -35,3 +35,5 @@ We haven't decided. We're a committee. We don't decide things, we minute them. B
 Still can't tell me who wants a game though. Yet.
 
 P.S. If your club has got out the other side of this, please find me by the squash courts. I'm the one in the knee support.
+
+**Run this at your club:** See how to [build a racket sports community that keeps members playing](https://rallio.io/community/), with mixers, ladders and box leagues.

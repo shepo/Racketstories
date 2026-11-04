@@ -33,3 +33,5 @@ I'm not cross. I promise I'm not cross. I just think you'd have a much better Sa
 Come on to the court!!
 
 Love, Mel
+
+**Run this at your club:** Read how coaches can [turn their pupils into a community of players](https://rallio.io/blog/coaches-build-a-community-of-players/), starting with a social.
