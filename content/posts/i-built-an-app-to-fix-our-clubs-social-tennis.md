@@ -35,3 +35,5 @@ Also nobody wants to sign up for anything. Ever. So now it's just a link in the 
 Thursdays work now. The organiser still runs them, they just don't need the spreadsheet. The noticeboard is still a crime scene. One thing at a time.
 
 P.S. Bev would like it on record that she "thought of half of this". Fair.
+
+**Run this at your club:** Here's how to [run a social mixer on Rallio](https://rallio.io/mixers/), with balanced doubles courts and reserves moved up automatically.

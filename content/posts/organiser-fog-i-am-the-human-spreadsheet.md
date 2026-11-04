@@ -33,3 +33,5 @@ None of the jobs I listed need to be me. Counting heads doesn't need to be me. M
 Right. Keith's just changed his thumbs up to "maybe 🤔". Back to counting.
 
 P.S. If you organise something and you're reading this at the hob, have a biscuit. You're not bad at it. It's just a lot.
+
+**Run this at your club:** Read [why social groups stop working past 12 people](https://rallio.io/blog/keeping-the-rally-going/), and see how to [run a social mixer](https://rallio.io/mixers/) that moves reserves up on its own.

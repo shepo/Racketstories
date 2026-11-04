@@ -37,3 +37,5 @@ Anyway. Nobody should have to say sorry 46 times at something called a SOCIAL.
 Next Tuesday's goal is under thirty. Will report back.
 
 P.S. My partner from court two messaged after to say "we all started there, you'll be fine". I was not fine. But it was very kind and I've saved the message.
+
+**Run this at your club:** Read [why ability levels stop mismatched games](https://rallio.io/blog/stop-saying-sorry-ability-levels-and-ratings/), and how Rallio Levels fits however your club already groups people.
