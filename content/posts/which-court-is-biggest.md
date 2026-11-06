@@ -18,9 +18,9 @@ The squash players were adamant. It's not big enough. A squash court is smaller 
 
 <!--more-->
 
-Well. The padel players were keen to point out that if a padel court is so much smaller, how come we can fit two of them on a tennis court when it's refurbished?
+Well. The padel players were keen to point out that a padel court is so much smaller you can fit two of them on a tennis court. Which is exactly what's happening when court 11 is refurbished.
 
-Jon was upset, because that means losing part of the patio. Two padel courts take more room than one tennis court, he said, and in the summer they'd be right up against the fence.
+Jon got upset. Not entirely about the courts, he said. When they've finished refurbishing court 11, the patio out the front will be half the size, and our noses will be touching the fence while we have our beer in the summer.
 
 Then the squash coach piped up that you could get four pickleball courts on one tennis court. This really upset the tennis captain, because everybody seems to be coming for another tennis court at the club.
 
@@ -38,7 +38,7 @@ For the record:
 - Badminton, 13.4 m by 6.1 m. Pickleball and badminton courts are the same to within a centimetre. Nobody asked. I enjoyed it anyway.
 - Squash, 9.75 m by 6.4 m. The smallest. So no, you can't play padel on a squash court. The squash players were right, and they'd like that minuted.
 
-Whether two padel courts or four pickleball courts fit on a tennis court depends on how much room there is around it, and how much of the patio Jon is prepared to give up. The website doesn't cover patios.
+Two padel courts on court 11 will fit, apparently, as long as Jon gives up half the patio. Whether four pickleball courts fit on a tennis court depends on how much room there is around it. The website doesn't cover patios.
 
 While we were on there, somebody looked up [how each sport serves](https://racketwiki.org/rules/). In padel you bounce the ball and hit it at or below waist height. That started a new argument about whose waist.
 
