@@ -32,11 +32,13 @@ Every racket and bat sport. The rules, the court sizes, the brands. Exactly what
 
 For the record:
 
-- Tennis, 23.77 m by 10.97 m. The biggest of the lot, as the tennis captain will be pleased to hear.
+- Tennis, 23.77 m by 10.97 m. Or 78 ft by 36 ft. The biggest of the lot, as the tennis captain will be pleased to hear.
 - Padel, 20 m by 10 m. Smaller than tennis, as the squash players said.
-- Pickleball, 13.41 m by 6.1 m.
-- Badminton, 13.4 m by 6.1 m. Pickleball and badminton courts are the same to within a centimetre. Nobody asked. I enjoyed it anyway.
-- Squash, 9.75 m by 6.4 m. The smallest. So no, you can't play padel on a squash court. The squash players were right, and they'd like that minuted.
+- Pickleball, 13.41 m by 6.1 m. Or 44 ft by 20 ft.
+- Badminton, 13.4 m by 6.1 m. Also 44 ft by 20 ft. Pickleball and badminton courts are the same to within a centimetre. Nobody asked. I enjoyed it anyway.
+- Squash, 9.75 m by 6.4 m. Or 32 ft by 21 ft. The smallest. So no, you can't play padel on a squash court. The squash players were right, and they'd like that minuted.
+
+You'll notice only one of those comes out in round metres. That's because the older sports were all laid out in feet and inches, so their metric figures were always going to look untidy. Seventy-eight feet is a perfectly sensible number. It just isn't a sensible number of metres. Padel is the only one here that was measured in metres from the start, which the padel players will no doubt add to their list of reasons it's the future.
 
 Two padel courts on court 11 will fit, apparently, as long as Jon gives up half the patio. Whether four pickleball courts fit on a tennis court depends on how much room there is around it. The website doesn't cover patios.
 
