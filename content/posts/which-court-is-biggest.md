@@ -1,6 +1,6 @@
 ---
 title: Which court is biggest? A bar argument, settled
-date: 2026-11-06T20:40
+date: 2026-11-06T09:16
 author: malcolm
 labels: Mixers, Club life, Padel, Pickleball
 description: The tennis, padel and squash players all end up in the club bar arguing about whose court is biggest and whose sport is taking over the club. A website settles it, which is a shame.
