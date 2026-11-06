@@ -33,3 +33,5 @@ Ours runs on [Rallio](https://rallio.io/ladders/) now (Jake at our club built it
 All I wanted was a game on Saturday. I've got one now. Took ten years.
 
 P.S. lost my first ladder match 6-1 6-2 to a man in his seventies called Derek. he was very nice about it. that was worse.
+
+**Run this at your club:** Read [why finding a partner shouldn't be this hard](https://rallio.io/blog/finding-a-partner-shouldnt-be-this-hard/): the "game on Saturday" problem when there are forty of you, not two.

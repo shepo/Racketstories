@@ -37,3 +37,5 @@ Anyway. The juniors keep asking if they can "have a go at the pickle one". I've 
 They're still my lines on court six. The proper ones. The white ones.
 
 P.S. I had a go on Thursday after everyone left. Just to see. It's harder than it looks. I'm not discussing it further.
+
+**Run this at your club:** [Run pickleball open play with fair rotations](https://rallio.io/pickleball/).

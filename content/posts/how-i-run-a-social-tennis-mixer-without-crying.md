@@ -41,3 +41,5 @@ We run ours through [Rallio](https://rallio.io/mixers/) now and it does the cour
 Just spread the good ones out. Please. For everyone's sake.
 
 P.S. Biscuits. A mixer with biscuits is a mixer people come back to. Fine, two secrets.
+
+**Run this at your club:** Rallio has [a step-by-step guide to running a social tennis mixer](https://rallio.io/blog/how-to-run-a-social-tennis-mixer/), covering numbers, rotations and reserves.
