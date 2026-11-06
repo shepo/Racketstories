@@ -4,7 +4,7 @@ We write about the bits of racket sports nobody puts in the brochure: the WhatsA
 
 ## The honest bit
 
-We'd rather you knew this up front.
+We'd rather you knew this up front. Racket Stories comes from the team behind [Rallio](https://rallio.io/).
 
 - **Jake is real.** A member at our club, Jake built [Rallio](https://rallio.io), the app our socials, ladders and mixers run on. Several posts here mention it, because it really is what we use.
 - **Everyone else is a composite.** That's Bev, Dan, Priya, Graham, and the coaches and club chair who write here too (Coach Terry, Coach Mel and Malcolm). Each one is stitched together from real people and real things that happened at real clubs (we've all met a Keith). Names and details are changed so nobody's mum recognises them, and so we can be rude about the booking system without getting a letter from the committee.

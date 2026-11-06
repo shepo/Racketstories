@@ -37,3 +37,5 @@ We're about thirty on a Thursday now. I'm still me. I've just stopped being the 
 The list. Make the list public. That's my whole advice.
 
 P.S. The biro still doesn't work. I keep it in the bag out of spite.
+
+**Run this at your club:** Read [why social racket groups stop working past 12 people](https://rallio.io/blog/keeping-the-rally-going/), and what to fix first.

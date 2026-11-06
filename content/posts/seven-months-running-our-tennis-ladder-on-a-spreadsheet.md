@@ -39,3 +39,5 @@ We moved it onto [Rallio](https://rallio.io/ladders/) in April and the bit I car
 Anyway. It was not just a spreadsheet. Don't say it's just a spreadsheet.
 
 P.S. Phil, if you're reading this, I've challenged you twice.
+
+**Run this at your club:** [Set up a tennis ladder](https://rallio.io/tennis/ladder/) that reorders itself when the scores go in.
