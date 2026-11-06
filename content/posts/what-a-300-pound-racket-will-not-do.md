@@ -3,12 +3,12 @@ title: What a £300 racket will not do for you
 date: 2026-11-04T20:50
 author: terry
 labels: Tennis, Coaching, Rants
-description: A tennis coach lists, grudgingly, everything an expensive new racket won't fix, after the third pupil this month turns up with one.
+description: A tennis coach lists, grudgingly, everything an expensive new racket won't fix, after a pupil turns up with one.
 image: level-up
 imageAlt: Retro pixel-art video game screenshot of a tennis doubles match with level-up icons
 ---
 
-Third one this month. Walked onto court on Monday, a man I've been coaching since March, and he's holding a racket that cost more than my first car. Took it out of a cover like it was a violin. Said he'd "done a lot of research".
+On Monday a man I've been coaching since March turned up holding a racket that cost more than my first car. Took it out of what looked like a violin case. Said he'd "done a lot of research".
 
 He has not done a lot of research. He has watched a lot of videos. Different thing.
 
@@ -16,7 +16,7 @@ He has not done a lot of research. He has watched a lot of videos. Different thi
 
 <!--more-->
 
-So, for him and the other two, and for whoever's reading this with a basket open on a website, here's what a £300 racket will not do for you.
+So, for him, and for whoever's reading this with a basket open on a website, here's what a £300 racket will not do for you.
 
 1. It will not move your feet. Your feet were the problem in March. They are the problem now. The racket has no opinion on your feet.
 2. It will not stop you hitting off the back foot. You hit off the back foot with the old one. You will hit off the back foot with this one, but in a nicer colour.
