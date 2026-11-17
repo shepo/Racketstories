@@ -43,7 +43,7 @@ The first paragraphs appear on the home page.
 The rest of the post. Supported markdown: ## and ### headings, **bold**, *italic*, [links](https://...), - and 1. lists, > quotes, --- and a "P.S." paragraph.
 ```
 
-Comments for a post go in `content/comments.json` under the post's slug. There's no comment form: every post's comment box points readers to the [Facebook group](https://www.facebook.com/groups/2578495509243593/), where the conversation actually happens. The group link lives in `content/site.json` (`links.facebook`).
+Comments for a post go in `content/comments/<slug>.json`, an array of comments with the same name as the post file. One file per post means post PRs never edit the same file, so merging one doesn't make the others conflict. There's no comment form: every post's comment box points readers to the [Facebook group](https://www.facebook.com/groups/2578495509243593/), where the conversation actually happens. The group link lives in `content/site.json` (`links.facebook`).
 
 To add photos, put full-size JPEGs in a folder and run `scripts/optimise-images.sh <folder>` (needs ImageMagick).
 

@@ -20,7 +20,12 @@ const ANALYTICS = process.env.POSTHOG === '1' || (!!process.env.WORKERS_CI && !P
 const readJSON = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const site = readJSON('content/site.json');
 const authors = readJSON('content/authors.json');
-const comments = readJSON('content/comments.json');
+// One file per post, content/comments/<slug>.json, so post PRs never edit a shared file.
+const comments = Object.fromEntries(
+  fs.readdirSync(path.join(ROOT, 'content/comments'))
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => [f.slice(0, -5), readJSON(`content/comments/${f}`)]),
+);
 
 // ---------- helpers ----------
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -164,6 +169,10 @@ const posts = fs.readdirSync(path.join(ROOT, 'content/posts')).filter((f) => f.e
     comments: comments[slug] || [],
   };
 }).sort((a, b) => sortKey(b.t).localeCompare(sortKey(a.t)));
+
+for (const slug of Object.keys(comments)) {
+  if (!posts.some((p) => p.slug === slug)) throw new Error(`content/comments/${slug}.json: no post with that slug`);
+}
 
 const labelIndex = {};
 for (const p of posts) for (const l of p.labels) (labelIndex[l] ||= []).push(p);
