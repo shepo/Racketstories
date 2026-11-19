@@ -1,5 +1,6 @@
 ---
 title: i just want a game on saturday
+seoTitle: How to find a tennis partner at your club
 date: 2026-05-12T22:03
 author: dan
 labels: Tennis, Finding a game, Ladders

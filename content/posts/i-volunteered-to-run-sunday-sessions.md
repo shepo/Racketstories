@@ -1,5 +1,6 @@
 ---
 title: "How hard can it be?" (Sunday sessions, a cautionary tale)
+seoTitle: Volunteering to run club racket sessions: how hard can it be?
 date: 2026-07-07T18:40
 author: graham
 labels: Squash, Organising, Club life, Tennis

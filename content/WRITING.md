@@ -49,6 +49,16 @@ Don't repeat a topic already on the blog. Skim the titles in `content/posts/` be
 - **Rallio:** only mention it when it naturally fits, at most once, in passing, linked to the most relevant page (`https://rallio.io/mixers/`, `/ladders/`, `/box-leagues/`, `/for-clubs/`, `/for-groups/`, `/for-coaches/`, `/features/`, `/padel/`, `/pickleball/`, `/tennis/`). Plenty of posts shouldn't mention it at all.
 - Never name real clubs, real coaches or real people (except Jake).
 
+## Getting found in search
+
+The `title` is the author's voice and stays on the page. Nobody searches for "46 sorries", though, so every post also gets a `seoTitle`, which is only used in the browser tab and in Google's results.
+
+- Before writing, decide the **one plain question or phrase** a stranger at another club would type that this post answers: "how to run a tennis ladder", "padel court size", "pickleball lines on tennis courts", "how to run a social tennis mixer". Write the post about the gripe as usual, but make sure that topic is actually in it.
+- `seoTitle`: that phrase first, then a hint of the story. Under 60 characters. Sentence case. Example: `Tennis box league: why nobody plays until the deadline`.
+- `description`: say the topic in the same plain words in the first sentence, then the story.
+- Use the plain words for the topic at least once in the first two paragraphs, as the author would say them ("our box league", "the padel courts"), not only a nickname for it.
+- If the post contains a useful fact (court sizes, how byes work, ladder rules), say it plainly in the post. Those are the bits people search for.
+
 ## The file
 
 Create `content/posts/<short-hyphenated-slug>.md`:
@@ -56,10 +66,11 @@ Create `content/posts/<short-hyphenated-slug>.md`:
 ```markdown
 ---
 title: A short title the author would actually write
+seoTitle: The topic in the words someone would search   # goes in the browser tab and Google only
 date: YYYY-MM-DDTHH:MM        # today's date, an evening time, UK local
 author: terry                 # terry, mel or malcolm
 labels: Pickleball, Coaching, Club life
-description: One or two plain sentences for Google and link previews (no hype).
+description: One or two plain sentences for Google and link previews (no hype). Name the topic in plain words.
 image: night-courts           # one of the names in static/images (without -400/-800)
 imageAlt: What the image shows
 ---

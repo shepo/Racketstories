@@ -1,9 +1,10 @@
 ---
 title: Six weeks to play four matches. A diary.
+seoTitle: Tennis box league: why nobody plays until the deadline
 date: 2026-10-27T21:10
 author: terry
 labels: Tennis, Rants, Organising
-description: A coach who runs a box league keeps a diary of the six-week window. Nobody plays anything until the last four days, every single time.
+description: A coach who runs a tennis box league keeps a diary of the six-week window. Nobody plays their box league matches until the last four days, every single time.
 image: saturday-cartoon
 imageAlt: Cartoon of a lone tennis player standing above dozens of empty courts asking where everyone is
 ---

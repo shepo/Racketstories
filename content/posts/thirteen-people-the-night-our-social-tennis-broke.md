@@ -1,5 +1,6 @@
 ---
 title: Thirteen. It was thirteen people that broke it.
+seoTitle: Social tennis group too big? What breaks after 12 players
 date: 2026-05-14T20:31
 author: bev
 labels: Organising, Mixers, Tennis

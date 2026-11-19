@@ -1,5 +1,6 @@
 ---
 title: The court roller is missing. Minutes of a very short search.
+seoTitle: The missing tennis court roller: minutes of a short search
 date: 2026-10-19T21:05
 author: malcolm
 labels: Club life, Committee, Tennis

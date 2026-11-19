@@ -26,6 +26,7 @@ Add `content/posts/<slug>.md`:
 ```markdown
 ---
 title: My post title
+seoTitle: Plain searchable topic first   # optional, used in <title> only
 date: 2026-11-02T20:15        # UK local time
 author: bev                   # a key from content/authors.json
 labels: Tennis, Mixers

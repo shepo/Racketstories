@@ -1,9 +1,10 @@
 ---
 title: What a £300 racket will not do for you
+seoTitle: Will an expensive tennis racket improve your game?
 date: 2026-11-06T09:01
 author: terry
 labels: Tennis, Coaching, Rants
-description: A tennis coach lists, grudgingly, everything an expensive new racket won't fix, after a pupil turns up with one.
+description: Does an expensive tennis racket make you a better player? A tennis coach lists, grudgingly, everything a new £300 racket won't fix.
 image: level-up
 imageAlt: Retro pixel-art video game screenshot of a tennis doubles match with level-up icons
 ---

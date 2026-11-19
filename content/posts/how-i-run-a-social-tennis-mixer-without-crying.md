@@ -1,5 +1,6 @@
 ---
 title: Spread the good ones out. That's it. That's the secret.
+seoTitle: How to run a social tennis mixer: spread the good players
 date: 2026-06-29T08:05
 author: bev
 labels: Mixers, Organising, Tennis, Padel, Pickleball

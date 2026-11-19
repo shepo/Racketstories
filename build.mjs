@@ -236,8 +236,8 @@ const cookieBar = ANALYTICS ? `<div class="cookie-bar" id="cookie-bar" role="dia
 ${inlineScript(`(function(){var b=document.getElementById("cookie-bar"),k="rs_cookies",c=null;if(!b)return;try{c=localStorage.getItem(k)}catch(e){}function clearPh(){try{window.posthog&&posthog.set_config&&posthog.set_config({persistence:"memory"})}catch(e){}var h=location.hostname,ds=["","; domain="+h,"; domain=."+h,"; domain=."+h.split(".").slice(-2).join(".")];document.cookie.split(";").forEach(function(x){var n=x.split("=")[0].trim();if(n.indexOf("ph_")===0)ds.forEach(function(d){document.cookie=n+"=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/"+d})});try{Object.keys(localStorage).forEach(function(n){if(n.indexOf("ph_")===0)localStorage.removeItem(n)})}catch(e){}}function pick(v){try{localStorage.setItem(k,v)}catch(e){}if(v==="no")clearPh();b.hidden=true}if(!c)b.hidden=false;document.getElementById("cookie-yes").onclick=function(){pick("yes")};document.getElementById("cookie-no").onclick=function(){pick("no")};var s=document.getElementById("cookie-settings");if(s)s.onclick=function(e){e.preventDefault();b.hidden=false;b.scrollIntoView&&b.scrollIntoView()}})();`)}` : '';
 const randomScript = inlineScript(`document.getElementById('nb').onclick=function(e){var u=${JSON.stringify(posts.map((p) => url(p.path)))};e.preventDefault();location.href=u[Math.floor(Math.random()*u.length)]}`);
 
-function layout({ title, description, pathName, body, open, ogImage, ogType = 'website', jsonld = [], noindex = false }) {
-  const fullTitle = pathName === '/' ? `${site.title}: ${site.description.split('.')[0]}` : `${title} | ${site.title}`;
+function layout({ title, seoTitle, description, pathName, body, open, ogImage, ogType = 'website', jsonld = [], noindex = false }) {
+  const fullTitle = pathName === '/' ? (site.seoTitle || `${site.title}: ${site.description.split('.')[0]}`) : `${seoTitle || title} | ${site.title}`;
   const og = ogImage ? abs(image(ogImage).jpg) : abs(image('racket-wall').jpg);
   return `<!doctype html>
 <html lang="${site.language}">
@@ -430,7 +430,7 @@ ${related.length ? `<div class="related"><h4>You might also like:</h4><ul>${rela
 <span>${older ? `<a href="${url(older.path)}" rel="next" title="${esc(older.title)}">Older Post &raquo;</a>` : ''}</span>
 </nav>
 <div class="feed-links">Subscribe to: <a href="${url('/feeds/posts/default.xml')}">Posts (Atom)</a></div>`;
-  write(p.path, layout({ title: p.title, description: p.description, pathName: p.path, open: p.t, ogImage: p.image, ogType: 'article', jsonld, body }), { lastmod: iso(p.t) });
+  write(p.path, layout({ title: p.title, seoTitle: p.seoTitle, description: p.description, pathName: p.path, open: p.t, ogImage: p.image, ogType: 'article', jsonld, body }), { lastmod: iso(p.t) });
 });
 
 // labels
