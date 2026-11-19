@@ -84,7 +84,7 @@ Opening paragraph or two (these show on the home page).
 The rest.
 ```
 
-- Labels: reuse existing ones where they fit (`Tennis`, `Padel`, `Pickleball`, `Squash`, `Coaching`, `Club life`, `Rants`, `Beginners`, `Mixers`, `Ladders`, `Organising`, `Levels`, `Juniors`, `Committee`). Two to four labels.
+- Labels: reuse existing ones where they fit (`Tennis`, `Padel`, `Pickleball`, `Squash`, `Coaching`, `Club life`, `Rants`, `Beginners`, `Mixers`, `Ladders`, `Organising`, `Levels`, `Juniors`, `Committee`). Two to four labels. A brand new label also needs an entry in `content/labels.json` (a `seoTitle` and a two or three sentence `intro` for its label page), or the build stops.
 - Images available: `clay-court`, `just-friendly`, `level-up`, `night-courts`, `noticeboard`, `organiser-cartoon`, `organiser-desk`, `racket-wall`, `saturday-cartoon`. Pick the least recently used one that fits.
 - Markdown parser quirks: a paragraph starting with `1.` becomes a list; don't start a line with a number and a full stop unless you want a list. Don't put straight double quotes inside the image caption.
 

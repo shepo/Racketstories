@@ -21,6 +21,7 @@ const readJSON = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const site = readJSON('content/site.json');
 const authors = readJSON('content/authors.json');
 const comments = readJSON('content/comments.json');
+const labelInfo = readJSON('content/labels.json');
 
 // ---------- helpers ----------
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -435,12 +436,16 @@ ${related.length ? `<div class="related"><h4>You might also like:</h4><ul>${rela
 
 // labels
 for (const [l, list] of Object.entries(labelIndex)) {
+  const info = labelInfo[l];
+  if (!info) throw new Error(`content/labels.json: no intro for label "${l}"`);
   write(labelPath(l), layout({
     title: `${l} stories`,
-    description: `Every Racket Stories post labelled ${l}: ${list.map((p) => p.title).join('; ')}.`.slice(0, 300),
+    seoTitle: info.seoTitle,
+    description: info.intro.slice(0, 300),
     pathName: labelPath(l),
     open: list[0].t,
-    body: `<div class="status-msg">Showing posts with label <b>${esc(l)}</b>. <a href="${url('/')}">Show all posts</a></div>${postList(list)}${pager(null, null)}`,
+    body: `<div class="label-intro"><h1 class="post-title">${esc(l)}</h1><p>${esc(info.intro)}</p></div>
+<div class="status-msg">Showing ${list.length} post${list.length === 1 ? '' : 's'} with label <b>${esc(l)}</b>. <a href="${url('/')}">Show all posts</a></div>${postList(list)}${pager(null, null)}`,
   }));
 }
 

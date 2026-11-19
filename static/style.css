@@ -110,6 +110,7 @@ a.followers{text-decoration:none}
 .search-results li a{font-size:18px}
 .footer{clear:both;margin:0 10px 10px;padding:16px;border-top:1px dashed #b9be9c;text-align:center;font:12px/1.6 "Trebuchet MS",Verdana,sans-serif;color:#888}
 .footer p{margin:4px 0}
+.label-intro{margin:6px 0 4px}.label-intro p{margin:0 0 10px}
 .status-msg{margin:16px 0;padding:8px 12px;background:#f4f4ec;border:1px solid #e3e3d3;font:13px "Trebuchet MS",sans-serif}
 
 .skip{position:absolute;left:-999px}
