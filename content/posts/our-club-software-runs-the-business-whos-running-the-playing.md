@@ -1,5 +1,6 @@
 ---
 title: Nineteen meetings and it still can't tell me who wants a game
+seoTitle: Club management software can't tell me who wants a game
 date: 2026-10-13T21:14
 author: graham
 labels: Club life, Rants, Squash, Organising

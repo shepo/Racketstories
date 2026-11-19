@@ -1,9 +1,10 @@
 ---
 title: Which court is biggest? A bar argument, settled
+seoTitle: Tennis vs padel vs squash vs pickleball court sizes
 date: 2026-11-06T09:16
 author: malcolm
 labels: Mixers, Club life, Padel, Pickleball
-description: The tennis, padel and squash players all end up in the club bar arguing about whose court is biggest and whose sport is taking over the club. A website settles it, which is a shame.
+description: How big is a tennis, padel, squash, pickleball and badminton court? A club bar argument about court sizes, settled with the measurements in metres and feet.
 image: night-courts
 imageAlt: Aerial view of four floodlit tennis courts at night
 ---

@@ -1,9 +1,10 @@
 ---
 title: Twenty-three names and thirty-two lines
+seoTitle: How to do a club championships draw with byes, by hand
 date: 2026-10-24T21:20
 author: malcolm
 labels: Tennis, Committee, Club life
-description: A club chair on the annual ritual of doing the championships draw by hand, why it always takes all evening, and why it always comes out wrong.
+description: A club chair on doing the club championships knockout draw by hand: 23 entries, 32 lines, where the byes go, seeding, and why it always comes out wrong.
 image: organiser-desk
 imageAlt: Cartoon of a flustered tennis competition organiser scratching their head behind a desk with a clipboard
 ---

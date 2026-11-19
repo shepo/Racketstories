@@ -1,9 +1,10 @@
 ---
 title: Dear parent on the fence
+seoTitle: Parents coaching from the fence at junior tennis
 date: 2026-10-31T20:45
 author: mel
 labels: Juniors, Coaching, Tennis, Pickleball
-description: A junior coach writes an open letter to the parent who coaches from behind the fence every Saturday, with one suggestion. Come onto the court.
+description: A junior tennis coach writes an open letter to the parent who coaches their child from behind the fence every Saturday, with one suggestion. Come onto the court.
 image: clay-court
 imageAlt: A tennis player in a white shirt and headband waiting to receive serve on a court
 ---

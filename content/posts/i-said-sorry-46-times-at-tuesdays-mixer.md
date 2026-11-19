@@ -1,5 +1,6 @@
 ---
 title: 46 sorries
+seoTitle: Mixed ability social tennis: 46 sorries at one mixer
 date: 2026-10-05T21:58
 author: priya
 labels: Beginners, Levels, Padel, Tennis, Squash

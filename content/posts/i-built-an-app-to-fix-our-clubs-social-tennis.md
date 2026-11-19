@@ -1,5 +1,6 @@
 ---
 title: It was only meant to fix Thursdays
+seoTitle: Why I built an app to organise our club's social tennis
 date: 2026-06-25T19:12
 author: jake
 labels: Tennis, Club life, Mixers

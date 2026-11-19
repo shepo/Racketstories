@@ -1,9 +1,10 @@
 ---
 title: I was wrong about padel
+seoTitle: Padel courts at a tennis club: I voted against them
 date: 2026-11-02T20:40
 author: malcolm
 labels: Padel, Tennis, Committee, Club life
-description: A tennis club chair who voted against building padel courts admits, in his own way, that they're the best thing the club has done in years.
+description: A tennis club chair who voted against building padel courts at the club admits, in his own way, that they're the best thing the club has done in years.
 image: just-friendly
 imageAlt: Cartoon of a padel doubles match where two players are clearly much stronger than the other two
 ---

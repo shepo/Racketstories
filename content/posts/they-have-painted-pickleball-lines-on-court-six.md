@@ -1,5 +1,6 @@
 ---
 title: They've painted pickleball lines on court six
+seoTitle: Pickleball lines on tennis courts: a tennis coach's view
 date: 2026-10-17T20:48
 author: terry
 labels: Pickleball, Tennis, Coaching, Rants

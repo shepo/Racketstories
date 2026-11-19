@@ -1,5 +1,6 @@
 ---
 title: I would like to play tennis at my own tennis night please
+seoTitle: Organising social tennis and never getting a game
 date: 2026-05-08T21:47
 author: bev
 labels: Organising, Tennis, Club life

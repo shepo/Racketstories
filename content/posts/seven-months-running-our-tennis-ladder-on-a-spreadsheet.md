@@ -1,5 +1,6 @@
 ---
 title: “It’s just a spreadsheet” (it was not just a spreadsheet)
+seoTitle: How to run a tennis ladder (and why not on a spreadsheet)
 date: 2026-06-29T23:16
 author: dan
 labels: Tennis, Ladders, Box leagues, Organising

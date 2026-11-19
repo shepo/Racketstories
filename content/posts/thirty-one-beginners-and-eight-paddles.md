@@ -1,5 +1,6 @@
 ---
 title: 31 beginners turned up and we had EIGHT paddles
+seoTitle: Running a beginners' pickleball taster: 31 people, 8 paddles
 date: 2026-10-21T21:34
 author: mel
 labels: Pickleball, Beginners, Coaching
